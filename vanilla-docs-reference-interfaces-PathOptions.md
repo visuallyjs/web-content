@@ -1,0 +1,11 @@
+PathOptions
+
+Options for a Path.
+
+| Name        | Type                    | Description                                                                                                                                                                                                                                                                         |
+| ----------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| edgeFilter? | (n:[Edge]()) => boolean | This function is given each Edge's backing data and asked to return true or false - true means include the Edge, false means exclude it.                                                                                                                                            |
+| nodeFilter? | (n:[Node]()) => boolean | This function is given each Node/Group's backing data and asked to return true or false - true means include the Node/Group, false means exclude it.                                                                                                                                |
+| source      | string \| [Vertex]()    | Path source. Either a vertex (node/group/port) or a vertex id.                                                                                                                                                                                                                      |
+| strict?     | boolean                 | Sets whether or not paths are searched strictly by the given source/target. If you supply a node as the source, but there are only edges connected to ports on that node, by default these edges will be ignored. Switching `strict` to false will mean these edges are considered. |
+| target      | string \| [Vertex]()    | Path target. Either a vertex (node/group/port) or a vertex id.                                                                                                                                                                                                                      |

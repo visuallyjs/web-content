@@ -1,0 +1,5 @@
+ChartTitleAlignment
+
+Chart title alignment
+
+`CHART_TITLE_ALIGN_LEFT | CHART_TITLE_ALIGN_MIDDLE | CHART_TITLE_ALIGN_RIGHT`

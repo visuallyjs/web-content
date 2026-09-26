@@ -1,0 +1,12 @@
+WheelOptions
+
+Options for how to respond to wheel events.
+
+| Name               | Type                      | Description                                                                                                                                                                                                                                            |
+| ------------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| cssFilter?         | string                    | Optional CSS 3 selector to check if the wheel should be enabled for the current event target.                                                                                                                                                          |
+| filter?            | (e:MouseEvent) => boolean | Optional function to call to check if wheel zooming should be enabled for the current event target.                                                                                                                                                    |
+| reverse?           | boolean                   | Defaults to false. If true, the zoom direction is reversed: wheel up zooms out, and wheel down zooms in.                                                                                                                                               |
+| sensitivity?       | number                    | How sensitive the wheel should be.                                                                                                                                                                                                                     |
+| shiftToChangeMode? | boolean                   | Defaults to true. When true, holding the SHIFT key while using the mouse wheel will toggle the wheel's mode:<br />if the wheel is currently set to pan, it will zoom. If it is currently set to zoom, it will pan.                                     |
+| useMetaKey?        | boolean                   | If true, the "meta" key (CMD on Mac, Ctrl on windows/linux) must be pressed in order for wheel zoom to operate. This can be useful if your UI fills the screen in one or more axes and your users would not be able to scroll past the Surface widget. |

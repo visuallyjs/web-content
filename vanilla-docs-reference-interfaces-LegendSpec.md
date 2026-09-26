@@ -1,0 +1,17 @@
+LegendSpec
+
+Options for a chart legend.
+
+| Name                 | Type                          | Description                                                                                                                                                                                                  |
+| -------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| align?               | "center" \| "left" \| "right" | How to align the content of the legend. Defaults to center align.                                                                                                                                            |
+| floating?            | boolean                       | Defaults to false, meaning the legend is positioned inline with the chart. When this is set to true, the legend can be floated anywhere in the chart (for which you need to provide values for `x` and `y`). |
+| font?                | [FontSpec]()                  | Optional font specification for the legend.                                                                                                                                                                  |
+| hide?                | boolean                       | Defaults to false. If true, the legend will not be shown.                                                                                                                                                    |
+| hideForSingleSeries? | boolean                       | Defaults to true: when there is a single series in the chart, the legend is not drawn. Set this to false to override that behaviour.                                                                         |
+| hover?               | boolean                       | Defaults to true - when user hovers over a series in the legend, the series is highlighted in the chart                                                                                                      |
+| orientation?         | "horizontal" \| "vertical"    | Defaults to vertical. The orientation in which to align the items.                                                                                                                                           |
+| padding?             | number                        | When not floating, padding to draw around the legend.                                                                                                                                                        |
+| valign?              | "top" \| "bottom" \| "middle" | Where to position the legend vertically (when floating is false). Defaults to bottom; you can choose to place the legend at the top (underneath the title), or to the left/right of the chart area.          |
+| x?                   | number                        | When floating is true, the X position of the legend.                                                                                                                                                         |
+| y?                   | number                        | When floating is true, the Y position of the legend.                                                                                                                                                         |

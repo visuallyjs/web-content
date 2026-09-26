@@ -1,0 +1,5 @@
+ContainmentType
+
+Containment types for draggables
+
+`CONTAINMENT_PARENT | CONTAINMENT_PARENT_ENCLOSED | CONTAINMENT_NOT_NEGATIVE`

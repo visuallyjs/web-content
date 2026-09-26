@@ -1,0 +1,459 @@
+# Templating
+
+This page discusses how to write templates for VisuallyJs's internal template engine.
+
+This template engine is used by the Vanilla VisuallyJs to render nodes and groups, but not in <!-- -->Angular<!-- -->. In <!-- -->Angular<!-- -->, though, this engine is used to define the appearance of SVG shapes - see the [Shape Sets](/angular/docs/apps/nodes-and-groups/shape-libraries#shape-sets) docs.
+
+## Template format[​](#template-format "Direct link to Template format")
+
+* Format is **strict** XHTML: *all* tags must be closed. This means:
+
+```html
+<input type="text"></input>
+
+```
+
+for example. You can also self-close an element:
+
+```html
+<input type="text"/>
+
+```
+
+* Use **only double quotes** for attributes:
+
+```html
+<div class="foo"></div>
+
+```
+
+*not*
+
+```html
+<div class='foo'></div>
+
+```
+
+Inside attribute values, however, you can use single quotes:
+
+```html
+<r-if test="value == 'foo'">...</r-if>
+
+```
+
+caution
+
+Your templates must return a *single root node*. If you return multiple nodes, VisuallyJs will use the first node only.
+
+## Interpolating values[​](#interpolating-values "Direct link to Interpolating values")
+
+To extract some value from a data object that a given template is rendering, use this syntax:
+
+```html
+<h1>{{name}}</h1>
+
+```
+
+So for some data object:
+
+```javascript
+{
+    name:"My Node"
+}
+
+```
+
+You'd get this output:
+
+```html
+<h1>My Node</h1>
+
+```
+
+### Providing defaults[​](#providing-defaults "Direct link to Providing defaults")
+
+You can use the `||` operator inside your templates to provide defaults, for instance:
+
+```html
+<h1>{{name || 'Empty'}}</h1>
+
+```
+
+### Values within attributes[​](#values-within-attributes "Direct link to Values within attributes")
+
+The template engine will extract values from the dataset within attributes, with some limitations. Let's enhance the heading example from above with a title attribute:
+
+```html
+<h1 aria-label="{{title}}" title="{{title}}">{{name}}</h1>
+
+```
+
+So for some node with this dataset:
+
+```javascript
+{
+    name:"My Node",
+    title:"This is the name of the node"
+}
+
+```
+
+You'd get this output:
+
+```html
+<h1 aria-label="This is the name of the node" title="This is the name of the node">My Node</h1>
+
+```
+
+tip
+
+Fallback values also work for attribute interpolation. For example, say we render a node that may or may not have a `title` data member. If it does have `title`, it will be rendered. If not, we'll use "No Title" instead:
+
+```html
+<h1 title="{{title || 'No title'}}">{{name}}</h1>
+
+```
+
+### Expressions[​](#expressions "Direct link to Expressions")
+
+You can use some basic maths inside an attribute value, for instance:
+
+```html
+<div>
+    <svg:svg width="{{width}}" height="{{height}}">
+        <svg:circle cx="{{width / 2}}" cy="{{height / 2}}" rx="{{width / 2}}" ry="{{height / 2}}"
+    </svg:svg>
+</div>
+
+```
+
+Expressions are limited to the format `LHS operator RHS` - so, above, `width / 2`, has a LHS of `width`, a RHS of `2` and a division operator. You can use parentheses to construct more complex expressions:
+
+```html
+<div>
+    <svg:svg width="{{width}}" height="{{height}}">
+        <svg:circle cx="{{(width-10) / 2}}" cy="{{(height-10) / 2}}" rx="{{(width-10) / 2}}" ry="{{(height-10) / 2}}"
+    </svg:svg>
+</div>
+
+```
+
+#### Evaluating Javascript[​](#evaluating-javascript "Direct link to Evaluating Javascript")
+
+You cannot eval arbitrary Javascript inside an expression:
+
+```html
+<div>
+    <svg:svg width="{{width}}" height="{{height}}">
+        <svg:circle cx="{{calcCenterX(width)}}" cy="{{calcCenterHeight(height)}}" rx="{{calcRx(width)}}" ry="{{calcRy(height)}}"
+    </svg:svg>
+</div>
+
+```
+
+This will **not** work. You can use [macros](#template-macros) to insert computed values.
+
+### Evaluating once only[​](#evaluating-once-only "Direct link to Evaluating once only")
+
+If you have an expression you want VisuallyJs to evaluate only on the initial render, you can prefix the expression with a `:`, as with the `data-direction` and `data-vertex-id` attributes in this example:
+
+```html
+<svg:svg data-direction="{{:dir}}" data-vertex-id="{{:vertexId}}" x="{{x}}" y="{{y}}" width="{{width}}" height="{{height}}">
+    ...
+</svg:svg>
+
+```
+
+This example is based on the elements we use to attach border handles in the Resizing Tools plugin: when we first create them, we want to specify what vertex they belong to, what direction to drag in, and their dimensions. On update, though, we only want to supply the dimensions, and the default behaviour of the update method is to clear any interpolated values for which no value is present in the updated payload. Marking them "evaluate once" will cause VisuallyJs to write their initial value and then subsequently ignore them.
+
+## Rendering SVG[​](#rendering-svg "Direct link to Rendering SVG")
+
+To render SVG elements you must prefix the tag with a namespace:
+
+```html
+<svg:svg width="50" height="50">
+  <svg:rect x="10" y="10" width="10" height="10"></svg:rect>
+</svg:svg>
+
+```
+
+This is due to the fact that the templating code uses `createElementNS` to create elements.
+
+<!-- -->
+
+## Tag reference[​](#tag-reference "Direct link to Tag reference")
+
+### Each[​](#each "Direct link to Each")
+
+The `r-each` element lets you loop over some data.
+
+#### With objects in an array[​](#with-objects-in-an-array "Direct link to With objects in an array")
+
+```javascript
+{
+  someDataMember:[
+    { id:"one", label:"value1" },
+    { id:"two", label:"value2" }
+  ]
+
+```
+
+```html
+<ul>
+    <r-each in="someDataMember">
+        <li id="{{id}}">{{label}}</li>
+    </r-each>
+</ul>    
+
+```
+
+#### With arrays in an array[​](#with-arrays-in-an-array "Direct link to With arrays in an array")
+
+```javascript
+{
+  someDataMember:[
+    [ "one", "value1" ],
+    [ "two", "value2" ]
+  ]
+
+```
+
+```html
+<ul>
+    <r-each in="someDataMember">
+        <li id="{{$value[0]}}">{{$value[1]}}</li>
+    </r-each>
+</ul>    
+
+```
+
+The point to note here is that the current array is exposed as the variable `$value`.
+
+#### With an Object[​](#with-an-object "Direct link to With an Object")
+
+```javascript
+{
+  someData : {
+    id:"foo",
+    label:"FOO is the label",
+    active:true,
+    count:14
+  }
+
+```
+
+```html
+<table>
+  <r-each in="someData">
+    <tr><td>{{$key}}</td><td>{{$value}}</td></tr>
+  </r-each>
+</table>
+
+```
+
+The point to note here is that each entry is presented to the template as an object with `$key` and `$value` members.
+
+#### Uniquely identifying child nodes[​](#uniquely-identifying-child-nodes "Direct link to Uniquely identifying child nodes")
+
+If you want to update a template that contains an `r-each` element, you need to ensure you set a `key` for each child of the loop. In this example, `id` is extracted from each child object that is rendered, and used internally to uniquely identify that element within the loop:
+
+```html
+<ul class="table-columns">
+    <r-each in="columns" key="id">
+        <r-tmpl id="tmplColumn"/>
+    </r-each>
+</ul>
+
+```
+
+If you change the data in some array that you have looped over VisuallyJs can update the appropriate DOM element, since it can use the `key` property to identify the existing element. Similarly, if you add a new entry to an array, VisuallyJs will use the `key` to determine that it has no current matching element, and if you remove an element from an array, VisuallyJs will use the `key` to determine that the element corresponding to that member is no longer needed, and will remove it.
+
+VisuallyJs will log a message to the console any time the `r-each` element is used without a `key`. If you do not supply a `key` then VisuallyJs will not be able to perform an update of the loop.
+
+### If[​](#if "Direct link to If")
+
+The `r-if` element allows you to selectively include/exclude content from a template. You need to provide a `test` attribute, which contains a simple expression that determines the existence - or not - of some condition.
+
+#### Existence[​](#existence "Direct link to Existence")
+
+You can check on the existence of some value in a few different ways:
+
+##### Not Falsy check[​](#not-falsy-check "Direct link to Not Falsy check")
+
+This test is the equivalent of writing `someValue != false`:
+
+```html
+<r-if test="someValue">
+    <div>hola</div>
+</r-if>
+
+```
+
+An existence test will be evaluated according to Javascript's "falsy" rules. If you are unfamiliar with falsiness in Javascript, you might like to [take a look here](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+
+##### Falsy check[​](#falsy-check "Direct link to Falsy check")
+
+This test is the equivalent of writing `someValue == false`:
+
+```html
+<r-if test="!someValue">
+    <div>hola</div>
+</r-if>
+
+```
+
+##### Not strict false[​](#not-strict-false "Direct link to Not strict false")
+
+This test is the equivalent of writing `someValue !== false`. It is useful when you've got some setting that should be considered `true` by default, ie. the absence of the value is acceptable as true:
+
+```html
+<r-if test="!!someValue">
+    <div>hola</div>
+</r-if>
+
+```
+
+caution
+
+This operator does not function exactly like the equivalent operation in Javascript - specifically, if `someValue` is null, this operator will resolve to true in the template expression, but would resolve to false in Javascript
+
+#### Comparisons[​](#comparisons "Direct link to Comparisons")
+
+```html
+<r-if test="foo == 5">
+    <div>hola</div>
+</r-if>
+
+```
+
+Comparisons are limited by the following rules:
+
+* Supported comparators are `==`, `===`, `<=`, `<`, `>`, `>=`, `!==`
+* Javascript expressions are not supported (eg **`someMethod(foo) == 5`**)
+
+note
+
+Inline `{{if ...}}` statements in attributes are not supported.
+
+### Comments[​](#comments "Direct link to Comments")
+
+Comments follow the standard XHTML syntax:
+
+```html
+<div>
+<!--
+    a comment
+    <span>Maybe some code was commented</span>
+-->
+</div>
+
+```
+
+Comments are stored in the parse tree for a template. This may or may not prove useful.
+
+### Nested Templates[​](#nested-templates "Direct link to Nested Templates")
+
+#### With specific context[​](#with-specific-context "Direct link to With specific context")
+
+```html
+<div>
+  <r-tmpl id="nested" context="someItem"></r-tmpl>
+</div>
+
+```
+
+#### Inheriting parent context[​](#inheriting-parent-context "Direct link to Inheriting parent context")
+
+```html
+<div>
+  <r-tmpl id="nested"></r-tmpl>
+</div>
+
+```
+
+The difference between these two examples is that in the first, an item called `someItem` is extracted from the current dataset, and passed in to the `nested` template, whereas in the second, the `nested` template is passed the exact same data that the parent is currently using to render itself.
+
+#### Inside an r-each loop[​](#inside-an-r-each-loop "Direct link to Inside an r-each loop")
+
+```html
+<div>
+    <r-each in="someList">
+        <r-tmpl id="nested"></r-tmpl>
+    </r-each>
+</div>
+
+```
+
+This is similar to the example immediately above - the nested template inherits its parent's context, but in this case the parent's context is currently some item from the list. You can also use `context` in this situation:
+
+```html
+<div>
+    <r-each in="someList">
+        <r-tmpl id="nested" context="someMemberOfTheListItem"></r-tmpl>
+    </r-each>
+</div>
+
+```
+
+The context for the nested element here is the `someMemberOfTheListItem` member of each list item.
+
+#### With complex context[​](#with-complex-context "Direct link to With complex context")
+
+You are not limited to extracting single variables from the current context to pass in to a nested template. You can specify a complex object too:
+
+```html
+<div>
+  <r-tmpl id="nested" context="{id:foo, label:'Hello'}"/>
+</div>
+
+```
+
+In this example, `foo` will be extracted from the context in which the current template is executing, and `Hello` is a hardcoded string.
+
+##### Accessing nested properties[​](#accessing-nested-properties "Direct link to Accessing nested properties")
+
+You can also specify properties that are nested inside the current context, either with dotted notation:
+
+```html
+<div>
+  <r-tmpl id="nested" context="{id:record.id, label:'Hello'}"/>
+</div>
+
+```
+
+or by naming the property:
+
+```html
+<div>
+  <r-tmpl id="nested" context="{id:record['id'], label:'Hello'}"/>
+</div>
+
+```
+
+#### Dynamic Template Names[​](#dynamic-template-names "Direct link to Dynamic Template Names")
+
+You can lookup the name of a nested template at runtime, for example consider these templates:
+
+```javascript
+<script type="vjs" id="someTemplate">
+    <h3>{{title}}</h3>
+    <r-tmpl lookup="{{nestedId}}" default="def"/>
+</script>
+
+<script type="vjs" id="green">
+    <h3>GREEN</h3>
+</script>
+
+```
+
+Here we see the ID of the nested template is derived from the `nestedId` property of the data we are rendering:
+
+```javascript
+{
+    title:"example",
+    nestedId:"green"
+}
+
+```
+
+`default` allows you to provide the ID of a template to use if the lookup fails.
