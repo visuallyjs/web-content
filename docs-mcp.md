@@ -59,6 +59,19 @@ To use VisuallyJs MCP with Claude Desktop, you need to edit your `claude_desktop
 
 ***
 
+### Codex[​](#codex "Direct link to Codex")
+
+1. Add the MCP via the command line. In this example we're adding our React MCP - just switch out `react` for `angular`, `vue`, `svelte` or `vanilla`:
+
+```bash
+codex mcp add visuallyjs-react -- npx -y @visuallyjs/browser-ui-react-mcp
+
+```
+
+2. Restart Codex
+
+***
+
 ### Cursor[​](#cursor "Direct link to Cursor")
 
 Cursor supports MCP servers natively.

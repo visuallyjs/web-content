@@ -97,17 +97,17 @@ npx degit git@github.com:visuallyjs-svelte/callflow callflow
 
 ```
 
-![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/cisco.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/cisco.png)
 
-![VisuallyJs - build diagrams and rich visual UIs fast](/img/company-logos/oracle.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/oracle.png)
 
-![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/walmart.png)
+![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/walmart.png)
 
-![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/ukg.png)
+![VisuallyJs - build diagrams and rich visual UIs fast](/img/company-logos/ukg.png)
 
-![When you've reached the limits with ReactFlow, VisuallyJs has what you need](/img/company-logos/siemens-energy.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/credit-suisse.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/credit-suisse.png)
 
 ## Who builds telephony UIs with VisuallyJs
 

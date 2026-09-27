@@ -229,15 +229,15 @@ bun add @visuallyjs/browser-ui
 
 ![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/cisco.png)
 
-![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](/img/company-logos/oracle.png)
+![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/oracle.png)
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/walmart.png)
+![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/walmart.png)
 
-![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/ukg.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/ukg.png)
 
 ![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/credit-suisse.png)
+![VisuallyJs - build diagrams and rich visual UIs fast](/img/company-logos/credit-suisse.png)
 
 # Get a head start
 
@@ -251,7 +251,7 @@ We ship numerous fully-featured apps to get you up and running in no time. Chanc
 
 ### [AI Agent Builder](./demonstrations-ai-agent-builder.md)
 
-[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/ai-agent-builder-2400.png)](/demonstrations/ai-agent-builder.md)
+[![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](https://static.visuallyjs.com/img/app-card/ai-agent-builder-2400.png)](/demonstrations/ai-agent-builder.md)
 
 [Use VisuallyJs to create an advanced AI agent builder](./demonstrations-ai-agent-builder.md)
 
@@ -263,49 +263,49 @@ We ship numerous fully-featured apps to get you up and running in no time. Chanc
 
 ### [Flowchart](./demonstrations-flowchart.md)
 
-[![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](https://static.visuallyjs.com/img/app-card/flowchart-2400.png)](/demonstrations/flowchart.md)
+[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/flowchart-2400.png)](/demonstrations/flowchart.md)
 
 [Fully featured flowchart builder including support for custom shapes, edge routing to avoid vertices, shape resize/rotate, SVG/PNG/JPG export and more](./demonstrations-flowchart.md)
 
 ### [BPMN](./demonstrations-bpmn.md)
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/bpmn-2400.png)](/demonstrations/bpmn.md)
+[![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/bpmn-2400.png)](/demonstrations/bpmn.md)
 
 [BPMN editor for modelling the steps of a business process. Pools, lanes, and a full set of task, event and gateway types](./demonstrations-bpmn.md)
 
 ### [ERD](./demonstrations-erd.md)
 
-[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/erd-2400.png)](/demonstrations/erd.md)
+[![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](https://static.visuallyjs.com/img/app-card/erd-2400.png)](/demonstrations/erd.md)
 
 [ERD editor for modelling the steps of a business process](./demonstrations-erd.md)
 
 ### [Gantt](./demonstrations-gantt.md)
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/gantt-2400.png)](/demonstrations/gantt.md)
+[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/gantt-2400.png)](/demonstrations/gantt.md)
 
 [Interactive Gantt chart featuring tasks, task groups and milestones](./demonstrations-gantt.md)
 
 ### [Kanban](./demonstrations-kanban.md)
 
-[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/kanban-2400.png)](/demonstrations/kanban.md)
+[![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](https://static.visuallyjs.com/img/app-card/kanban-2400.png)](/demonstrations/kanban.md)
 
 [Fully featured Kanban board. Drag items between columns and use the inspector to update items and columns](./demonstrations-kanban.md)
 
 ### [Database Schema](./demonstrations-schema.md)
 
-[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/schema-2400.png)](/demonstrations/schema.md)
+[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/schema-2400.png)](/demonstrations/schema.md)
 
 [Database Schema builder with support for tables, views, multiple columns types, and column relationships](./demonstrations-schema.md)
 
 ### [Org Chart](./demonstrations-orgchart.md)
 
-[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/orgchart-2400.png)](/demonstrations/orgchart.md)
+[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/orgchart-2400.png)](/demonstrations/orgchart.md)
 
 [Uses the classic org chart layout and provides an inspector from which the user can navigate around](./demonstrations-orgchart.md)
 
 ### [Circuit Diagram](./demonstrations-circuit-diagram.md)
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/circuit-diagram-2400.png)](/demonstrations/circuit-diagram.md)
+[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/circuit-diagram-2400.png)](/demonstrations/circuit-diagram.md)
 
 [Fully featured starter app containing a circuit diagram builder](./demonstrations-circuit-diagram.md)
 
@@ -317,7 +317,7 @@ We ship numerous fully-featured apps to get you up and running in no time. Chanc
 
 ### [Mindmap](./demonstrations-mindmap.md)
 
-[![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](https://static.visuallyjs.com/img/app-card/mindmap-2400.png)](/demonstrations/mindmap.md)
+[![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/mindmap-2400.png)](/demonstrations/mindmap.md)
 
 [The mindmap builder highlights several advanced features, such as custom layouts, parsers and exporters](./demonstrations-mindmap.md)
 
@@ -329,61 +329,61 @@ We ship numerous fully-featured apps to get you up and running in no time. Chanc
 
 ### [Logic Gates](./demonstrations-logic-gates.md)
 
-[![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/logic-gates-2400.png)](/demonstrations/logic-gates.md)
+[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/logic-gates-2400.png)](/demonstrations/logic-gates.md)
 
 [Fully featured starter app containing a logic gates diagram builder](./demonstrations-logic-gates.md)
 
 ### [Template](./demonstrations-template.md)
 
-[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/template-2400.png)](/demonstrations/template.md)
+[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/template-2400.png)](/demonstrations/template.md)
 
 [Basic starter app demonstrating how to setup VisuallyJs and its main features](./demonstrations-template.md)
 
 ### [Area & Line charts](./demonstrations-area-line-chart.md)
 
-[![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/area-line-chart-2400.png)](/demonstrations/area-line-chart.md)
+[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/area-line-chart-2400.png)](/demonstrations/area-line-chart.md)
 
 [Use VisuallyJs to create area and line charts](./demonstrations-area-line-chart.md)
 
 ### [Bar & Column charts](./demonstrations-bar-column-chart.md)
 
-[![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/bar-column-chart-2400.png)](/demonstrations/bar-column-chart.md)
+[![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](https://static.visuallyjs.com/img/app-card/bar-column-chart-2400.png)](/demonstrations/bar-column-chart.md)
 
 [Multiple series, stacked, grouped, pivoted, and much more](./demonstrations-bar-column-chart.md)
 
 ### [Scatter & Bubble charts](./demonstrations-scatter-bubble-chart.md)
 
-[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/scatter-bubble-chart-2400.png)](/demonstrations/scatter-bubble-chart.md)
+[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/scatter-bubble-chart-2400.png)](/demonstrations/scatter-bubble-chart.md)
 
 [Circle, rectangle, triangle or custom markers, multiple series, fully customizable](./demonstrations-scatter-bubble-chart.md)
 
 ### [Sankey chart](./demonstrations-sankey.md)
 
-[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/sankey-2400.png)](/demonstrations/sankey.md)
+[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/sankey-2400.png)](/demonstrations/sankey.md)
 
 [Use VisuallyJs to create a professional Sankey chart, with support for pivoting](./demonstrations-sankey.md)
 
 ### [Supply Chain Analyzer](./demonstrations-supply-chain.md)
 
-[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/supply-chain-2400.png)](/demonstrations/supply-chain.md)
+[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/supply-chain-2400.png)](/demonstrations/supply-chain.md)
 
 [Dashboard for managing and analyzing supply chains](./demonstrations-supply-chain.md)
 
 ### [Network Infrastructure](./demonstrations-network-infrastructure.md)
 
-[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/network-infrastructure-2400.png)](/demonstrations/network-infrastructure.md)
+[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/network-infrastructure-2400.png)](/demonstrations/network-infrastructure.md)
 
 [Combine a network management diagram with charts showing projected cost and resource usage](./demonstrations-network-infrastructure.md)
 
 ### [Scrolling Lists](./demonstrations-list-manager.md)
 
-[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/list-manager-2400.png)](/demonstrations/list-manager.md)
+[![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/list-manager-2400.png)](/demonstrations/list-manager.md)
 
 [Use the ListManager plugin to manage scrolling lists: as elements are scrolled out of the view, their edges are moved to the list container](./demonstrations-list-manager.md)
 
 ### [FIFA World Cup](./demonstrations-fifaworldcup.md)
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/fifaworldcup-2400.png)](/demonstrations/fifaworldcup.md)
+[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/fifaworldcup-2400.png)](/demonstrations/fifaworldcup.md)
 
 [A visualizer for the FIFA World cup - group stages, team journeys and a tournament view.](./demonstrations-fifaworldcup.md)
 
