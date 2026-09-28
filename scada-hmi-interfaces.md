@@ -30,7 +30,7 @@
 
 [Demonstrations](./demonstrations.md)▼
 
-[Consulting](./consulting.md)
+[Solutions](./consulting.md)▼
 
 [Download](/download)[Try now](./trial.md)[Buy](./purchase.md)
 
@@ -73,17 +73,17 @@ npx degit git@github.com:visuallyjs-svelte/scada-hmi scada-hmi
 
 ```
 
-![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/cisco.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/cisco.png)
 
-![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/oracle.png)
+![When you've reached the limits with ReactFlow, VisuallyJs has what you need](/img/company-logos/oracle.png)
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/walmart.png)
+![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](/img/company-logos/walmart.png)
 
-![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](/img/company-logos/ukg.png)
+![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/ukg.png)
 
-![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/siemens-energy.png)
+![When you've reached the limits with ReactFlow, VisuallyJs has what you need](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/credit-suisse.png)
+![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/credit-suisse.png)
 
 ## Who builds industrial automation UIs with VisuallyJs
 

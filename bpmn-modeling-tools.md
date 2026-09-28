@@ -30,7 +30,7 @@
 
 [Demonstrations](./demonstrations.md)▼
 
-[Consulting](./consulting.md)
+[Solutions](./consulting.md)▼
 
 [Download](/download)[Try now](./trial.md)[Buy](./purchase.md)
 
@@ -75,17 +75,17 @@ npx degit git@github.com:visuallyjs-svelte/bpmn bpmn
 
 ```
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/cisco.png)
+![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](/img/company-logos/cisco.png)
 
 ![When you've reached the limits with ReactFlow, VisuallyJs has what you need](/img/company-logos/oracle.png)
 
-![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/walmart.png)
+![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](/img/company-logos/walmart.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/ukg.png)
+![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/ukg.png)
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/siemens-energy.png)
+![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/credit-suisse.png)
+![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](/img/company-logos/credit-suisse.png)
 
 ## Why choose VisuallyJs over the alternatives
 

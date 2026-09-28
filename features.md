@@ -30,7 +30,7 @@
 
 [Demonstrations](./demonstrations.md)▼
 
-[Consulting](./consulting.md)
+[Solutions](./consulting.md)▼
 
 [Download](/download)[Try now](./trial.md)[Buy](./purchase.md)
 
@@ -163,6 +163,12 @@ Snaplines
 ![](https://static.visuallyjs.com/img/plugins/snaplines-500.png)
 
 Visual cues to help align everything just so
+
+Value Propagation
+
+![](https://static.visuallyjs.com/img/plugins/graph-propagation-500.png)
+
+Automatically propagate values through the graph with a declarative API
 
 Pan Buttons
 

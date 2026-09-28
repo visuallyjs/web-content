@@ -30,7 +30,7 @@
 
 [Demonstrations](./demonstrations.md)▼
 
-[Consulting](./consulting.md)
+[Solutions](./consulting.md)▼
 
 [Download](/download)[Try now](./trial.md)[Buy](./purchase.md)
 
