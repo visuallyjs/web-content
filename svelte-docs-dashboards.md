@@ -10,7 +10,7 @@ In a supply chain management app, a user can use a flowchart-style interface to 
 
 A separate Sankey view can then provide the user with a summary of the flow, with the ability to pivot on specific values in the edge data such as the transit mode or carrier. You can see this in action in our <!-- -->[Supply Chain Analyzer](/demonstrations/supply-chain.md) starter app:
 
-![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/supply-chain-2400.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/supply-chain-2400.png)
 
 ### 2. Infrastructure & Cloud Resource Management[​](#2-infrastructure--cloud-resource-management "Direct link to 2. Infrastructure & Cloud Resource Management")
 
