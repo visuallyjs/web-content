@@ -71,17 +71,17 @@ npx degit git@github.com:visuallyjs-svelte/ai-agent-builder ai-agent-builder
 
 ```
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/cisco.png)
+![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/cisco.png)
 
-![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/oracle.png)
+![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](/img/company-logos/oracle.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/walmart.png)
+![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](/img/company-logos/walmart.png)
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/ukg.png)
+![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](/img/company-logos/ukg.png)
 
-![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](/img/company-logos/siemens-energy.png)
+![When you've reached the limits with ReactFlow, VisuallyJs has what you need](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/credit-suisse.png)
+![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/credit-suisse.png)
 
 ## Who builds AI Agent platforms with VisuallyJs
 
@@ -153,6 +153,15 @@ DISCOVER
 * [Contact Us](./contact.md)
 * [License Agreement](./license.md)
 * [Privacy Policy](./privacy.md)
+
+SOLUTIONS
+
+* [AI Chatbot Interfaces](./ai-chatbot-interfaces.md)
+* [AI Agent Builders](./ai-agent-builders.md)
+* [Call Flow Interfaces](./call-flow-interfaces.md)
+* [BPMN Modeling Tools](./bpmn-modeling-tools.md)
+* [SCADA/HMI Interfaces](./scada-hmi-interfaces.md)
+* [Database Schema Builders](./database-schema-builders.md)
 
 DEVELOP
 

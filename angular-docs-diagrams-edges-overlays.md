@@ -54,20 +54,22 @@ ArrowOverlayOptions
 
 Options for an Arrow overlay.
 
-| Name        | Type                                                    | Description                                                                                                    |
-| ----------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| attributes? | Record\<string,string>                                  | Optional custom attributes to write to the overlay's element.                                                  |
-| cssClass?   | string                                                  | Optional CSS class(es) to add to the overlay's element.                                                        |
-| direction?  | number                                                  | 1 to point forwards (the default), -1 to point backwards. Only taken into consideration in some overlay types. |
-| events?     | Record<[OverlayEvents](),(value:any, event:any) => any> | Optional event handlers to attach to the overlay.                                                              |
-| foldback?   | number                                                  | How far, as a decimal, along the line from head to baseline to fold back into. Defaults to 0.623.              |
-| hollow?     | boolean                                                 | Defaults to false. When true, the arrow is stroked but not filled.                                             |
-| id?         | string                                                  | Optional ID for the overlay. Can be used to retrieve the overlay from a connection.                            |
-| length?     | number                                                  | Length from the head to the baseline. Defaults to 20.                                                          |
-| location?   | number                                                  | Defaults to 0.5. See docs.                                                                                     |
-| paintStyle? | [PaintStyle]()                                          | Optional paint style to use.                                                                                   |
-| visibility? | [OverlayVisibility]()                                   | Whether the overlay is always visible, or only on hover. Defaults to OVERLAY\_VISIBILITY\_ALWAYS.              |
-| width?      | number                                                  | Width of the arrow's baseline. Defaults to 20.                                                                 |
+| Name        | Type                                                    | Description                                                                                                        |
+| ----------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| attributes? | Record\<string,string>                                  | Optional custom attributes to write to the overlay's element.                                                      |
+| cssClass?   | string                                                  | Optional CSS class(es) to add to the overlay's element.                                                            |
+| direction?  | number                                                  | 1 to point forwards (the default), -1 to point backwards. Only taken into consideration in some overlay types.     |
+| events?     | Record<[OverlayEvents](),(value:any, event:any) => any> | Optional event handlers to attach to the overlay.                                                                  |
+| foldback?   | number                                                  | How far, as a decimal, along the line from head to baseline to fold back into. Defaults to 0.623.                  |
+| hollow?     | boolean                                                 | Defaults to false. When true, the arrow is stroked but not filled.                                                 |
+| id?         | string                                                  | Optional ID for the overlay. Can be used to retrieve the overlay from a connection.                                |
+| length?     | number                                                  | Length from the head to the baseline. Defaults to 20.                                                              |
+| location?   | number                                                  | Defaults to 0.5. See docs.                                                                                         |
+| maxZoom?    | number                                                  | Maximum zoom at which this overlay is visible. Defaults to Infinity. Null or a negative value disables this bound. |
+| minZoom?    | number                                                  | Minimum zoom at which this overlay is visible. Defaults to 0. Null or a negative value disables this bound.        |
+| paintStyle? | [PaintStyle]()                                          | Optional paint style to use.                                                                                       |
+| visibility? | [OverlayVisibility]()                                   | Whether the overlay is always visible, or only on hover. Defaults to OVERLAY\_VISIBILITY\_ALWAYS.                  |
+| width?      | number                                                  | Width of the arrow's baseline. Defaults to 20.                                                                     |
 
 #### Arrow direction[​](#arrow-direction "Direct link to Arrow direction")
 
@@ -152,6 +154,8 @@ Options for a Dot overlay
 | hollow?     | boolean                                                 | Defaults to false. When true, the arrow is stroked but not filled.                                                                                                                                                                                                                                                              |
 | id?         | string                                                  | Optional ID for the overlay. Can be used to retrieve the overlay from a connection.                                                                                                                                                                                                                                             |
 | location?   | number                                                  | Defaults to 0.5. See docs.                                                                                                                                                                                                                                                                                                      |
+| maxZoom?    | number                                                  | Maximum zoom at which this overlay is visible. Defaults to Infinity. Null or a negative value disables this bound.                                                                                                                                                                                                              |
+| minZoom?    | number                                                  | Minimum zoom at which this overlay is visible. Defaults to 0. Null or a negative value disables this bound.                                                                                                                                                                                                                     |
 | paintStyle? | [PaintStyle]()                                          | Optional paint style to use.                                                                                                                                                                                                                                                                                                    |
 | radius?     | number                                                  | Radius of the dot. Defaults to 5.                                                                                                                                                                                                                                                                                               |
 | visibility? | [OverlayVisibility]()                                   | Whether the overlay is always visible, or only on hover. Defaults to OVERLAY\_VISIBILITY\_ALWAYS.                                                                                                                                                                                                                               |
@@ -187,6 +191,8 @@ Options for a Rectangle overlay
 | hollow?     | boolean                                                 | Defaults to false. When true, the arrow is stroked but not filled.                                                                                                                                                                                                                                                                           |
 | id?         | string                                                  | Optional ID for the overlay. Can be used to retrieve the overlay from a connection.                                                                                                                                                                                                                                                          |
 | location?   | number                                                  | Defaults to 0.5. See docs.                                                                                                                                                                                                                                                                                                                   |
+| maxZoom?    | number                                                  | Maximum zoom at which this overlay is visible. Defaults to Infinity. Null or a negative value disables this bound.                                                                                                                                                                                                                           |
+| minZoom?    | number                                                  | Minimum zoom at which this overlay is visible. Defaults to 0. Null or a negative value disables this bound.                                                                                                                                                                                                                                  |
 | paintStyle? | [PaintStyle]()                                          | Optional paint style to use.                                                                                                                                                                                                                                                                                                                 |
 | rotate?     | boolean                                                 | Whether or not to rotate the rectangle so that it is always perpendicular to the connector path. Defaults to false.                                                                                                                                                                                                                          |
 | visibility? | [OverlayVisibility]()                                   | Whether the overlay is always visible, or only on hover. Defaults to OVERLAY\_VISIBILITY\_ALWAYS.                                                                                                                                                                                                                                            |
@@ -237,6 +243,8 @@ Options for a label overlay
 | label                   | string \| Function                                      | String, or a function returning a string, for the label.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | labelLocationAttribute? | string                                                  | Optional name of the attribute that identifies this overlay's location on the path. Defaults to `location`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | location?               | number                                                  | Defaults to 0.5. See docs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| maxZoom?                | number                                                  | Maximum zoom at which this overlay is visible. Defaults to Infinity. Null or a negative value disables this bound.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| minZoom?                | number                                                  | Minimum zoom at which this overlay is visible. Defaults to 0. Null or a negative value disables this bound.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | rotatable?              | boolean \| "strict" \| "legible"                        | Sets whether the label can be rotated to match the gradient of the connector at that location at which it is positioned. If you supply boolean true here, the label will be made rotatable, in "legible" mode - in which VisuallyJs ensures that the label is legible by avoiding rotating the text so that it is upside down or otherwise awkward to read. You can set "strict" mode, which will rotate the label to the appropriate angle regardless of whether or not it will make the label difficult to read. If you supply boolean false, the label will not be rotatable in any situation. |
 | useHTMLElement?         | boolean                                                 | Whether or not to use an HTML element. Defaults to false (uses an SVG element)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | visibility?             | [OverlayVisibility]()                                   | Whether the overlay is always visible, or only on hover. Defaults to OVERLAY\_VISIBILITY\_ALWAYS.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -372,6 +380,50 @@ info
 
 In this example we made it easy to hover over the edge by instructing VisuallyJs to paint a 30 pixel transparent connector outline, via the `outlineWidth:30` config.
 
+## Showing/hiding on zoom[​](#showinghiding-on-zoom "Direct link to Showing/hiding on zoom")
+
+You can provide `minZoom` and/or `maxZoom` options to an overlay and VisuallyJs will hide/show it as required:
+
+<!-- -->
+
+```typescript
+
+import { VisuallyJsModule } from "@visuallyjs/browser-ui-angular";
+import {Component} from "@angular/core";
+
+@Component({
+    template:`<div style="width:100%;height:500px">
+<vjs-diagram [data]="data" [options]="options"/>
+</div>`
+export class MyComponent {
+    data = ...
+    
+    options = {
+  edges: {
+    overlays: [
+      {
+        type: "Label",
+        options: {
+          label: "Hello!",
+          minZoom: 1,
+          maxZoom: 2
+        }
+      }
+    ],
+    paintOutline: true,
+    outlineWidth: 30
+  }
+}
+}
+
+```
+
+The 'Hello' overlay is initially visible in this canvas - but it is constrained to only be visible when zoom is between 1 and 2. Try zooming in or out here and you will see it disappear and reappear:
+
+**********
+
+<!-- -->
+
 ## Angular component overlays[​](#angular-component-overlays "Direct link to Angular component overlays")
 
 VisuallyJs supports using Angular components as overlays. There are two approaches:
@@ -464,3 +516,44 @@ The benefit of this approach is that you get access to a few useful class member
 | ui                                 | T                   | The UI that this overlay is rendered by                                                                                |
 | removeEdge()                       | void                | Remove the underlying edge. This will unload the edge and its visual representation, including this overlay component. |
 | updateEdge(updates:[ObjectData]()) | void                | Update the underlying edge with the given data.                                                                        |
+
+### Min/max zoom[​](#minmax-zoom "Direct link to Min/max zoom")
+
+You can use the `minZoom` and `maxZoom` concepts with Aangular component overlays too:
+
+```typescript
+import {Component} from "@angular/core"
+import { MyOverlay } from "./my.overlay.ts"
+import {VisuallyJsModule, AngularComponentOverlayType} from "@visuallyjs/browser-ui-angular"
+
+@Component({
+    template:`<vjs-surface [viewOptions]="view" [data]="data"/>`
+})
+export class MyApp {
+    data = {
+        nodes:[ {id:"1", label:"1", left:50, top:50}, {id:"2", label:"2", left:250, top:250}],
+        edges:[
+            { source:"1", target:"2", data:{someValue:"hello"}}
+        ]
+    }
+    
+    view = {
+      edges: {
+          default: {
+              overlays: [{
+                  type: AngularComponentOverlayType,
+                  options: {
+                      minZoom:2,
+                      component: MyOverlay
+                  }
+              }]
+          }
+      }  
+    }
+}
+
+```
+
+In this canvas you will not see the overlay until you zoom in a little bit (because we have `minZoom:2` in the options):
+
+**********

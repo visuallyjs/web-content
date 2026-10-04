@@ -1,10 +1,20 @@
 # Changelog
 
+## 1.2.9[​](#129 "Direct link to 1.2.9")
+
+4th October 2026
+
+### General[​](#general "Direct link to General")
+
+* Refactored bulk loader code to implement a 4x performance improvement
+* Updated packages to remove the `publishConfig` section of the package.json. This improves the portability of the built artifacts, allowing them to be uploaded to private NPM repositories without retaining the reference to the VisuallyJs repository URL.
+* Added support for `minZoom` and `maxZoom` options on overlays: overlays can now be hidden/shown based upon the zoom level of the UI.
+
 ## 1.2.8[​](#128 "Direct link to 1.2.8")
 
 26th September 2026
 
-### General[​](#general "Direct link to General")
+### General[​](#general-1 "Direct link to General")
 
 * Added a new `GraphPropagationEngine` class, plus associated `GraphPropagationEnginePlugin`. This offers a way to propagate properties from one vertex to another, based on a set of rules.
 * Added support for `readOnly` on a `ShapePropertyDefinition` - inspectors will show you the value but not allow you to edit it.
@@ -34,7 +44,7 @@
 
 21st September 2026
 
-### General[​](#general-1 "Direct link to General")
+### General[​](#general-2 "Direct link to General")
 
 * Added new Scada/HMI starter app to all libraries. This app provides a solid foundation on which you can build your own Scada/HMI apps, with a look and feel that is aligned with the HMI ISA-101 Standard.
 
@@ -84,7 +94,7 @@
 
 10th September 2026
 
-### General[​](#general-2 "Direct link to General")
+### General[​](#general-3 "Direct link to General")
 
 * Improved label placement for SVG shapes when label position is "top" or "bottom"
 * Added support for SVG shape label background.
@@ -97,7 +107,7 @@
 
 7th September 2026
 
-### General[​](#general-3 "Direct link to General")
+### General[​](#general-4 "Direct link to General")
 
 * Added support for rotating elements that are being dragged from a palette by tapping/holding a specific key
 * Added the concept of "auto edge connect": elements that are being dragged from the palette can be automatically connected to existing vertices by dragging them over connection points.
@@ -143,7 +153,7 @@
 
 18th August 2026
 
-### General[​](#general-4 "Direct link to General")
+### General[​](#general-5 "Direct link to General")
 
 * Added new `Bowtie` layout - a two sided hierarchy, such as you might use in a Mindmap.
 * Added support for `autoArm` and `armTimeout` to the lasso plugin - the plugin switches on after a long press on the canvas, without the user needing to switch the surface to select mode.
@@ -175,7 +185,7 @@
 
 7th August 2026
 
-### General[​](#general-5 "Direct link to General")
+### General[​](#general-6 "Direct link to General")
 
 * A new "line crossings" plugin was added. This plugin works alongside the `Orthogonal` connector (or a Straight connector with orthogonal constraint applied) to draw markers where two edges intersect. Markers may be a bridge, a gap or a dot, and may be placed on either the horizontal or vertical segment at an intersection.
 * Connector and anchor computation was updated to snap values to a half pixel increment. This helps avoid painting issues related to antialiasing, particularly at high zoom levels.
@@ -184,7 +194,7 @@
 
 1st August 2026
 
-### General[​](#general-6 "Direct link to General")
+### General[​](#general-7 "Direct link to General")
 
 * Internal updates to the `update***` methods to ensure that any associated type change is grouped along with the updates in a transaction.
 * Added new `relayoutOnVertexRemove` option to Surface and Paper. Useful when you're using a static layout such as the Hierarchy layout.
@@ -219,7 +229,7 @@
 
 28 July 2026
 
-### General[​](#general-7 "Direct link to General")
+### General[​](#general-8 "Direct link to General")
 
 * The `EVENT_GRAPH_CLEARED` event, fired by the model, now passes the model that fired it as a payload.
 * The Surface was updated to fix an issue where it was holding on to stale viewport dimensions: calling `zoomToFit` after external change to viewport element size would use the cached dimensions.
@@ -454,7 +464,7 @@ Initial release.
 
 ### Breaking changes[​](#breaking-changes "Direct link to Breaking changes")
 
-#### General[​](#general-8 "Direct link to General")
+#### General[​](#general-9 "Direct link to General")
 
 * IMPORTANT: The `Size` interface was changed from `{w:number, h:number}` to `{width:number, height:number}`. This is a small change from a code perspective but with far-reaching effects - any part of a JsPlumb app in which you specify a size for something, be it a grid, or the size of icons in a shape library palette, or the max size for a group, etc, will need to be updated for VisuallyJs to use the new interface. We made this change to make the code more internally consistent: width/height were used by the drawing tools and are also standard for various DOM interfaces.
 * The default anchor is now `Continuous`, where previously it was `Bottom`. We listed this above as a feature but if your app is relying on the default at any point you'll see a change.

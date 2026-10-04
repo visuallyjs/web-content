@@ -41,6 +41,15 @@ DISCOVER
 * [License Agreement](/license.md)
 * [Privacy Policy](/privacy.md)
 
+SOLUTIONS
+
+* [AI Chatbot Interfaces](/ai-chatbot-interfaces.md)
+* [AI Agent Builders](/ai-agent-builders.md)
+* [Call Flow Interfaces](/call-flow-interfaces.md)
+* [BPMN Modeling Tools](/bpmn-modeling-tools.md)
+* [SCADA/HMI Interfaces](/scada-hmi-interfaces.md)
+* [Database Schema Builders](/database-schema-builders.md)
+
 DEVELOP
 
 * [Download](/download)

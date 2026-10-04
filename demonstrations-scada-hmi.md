@@ -44,7 +44,7 @@ Professional and modern Scada/HMI application with fluid, heating/cooling & inst
 
 Grab the source code from Github and start working on your new app right now!
 
-![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/scada-hmi-1200.png)
+![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/scada-hmi-1200.png)
 
 Scada/HMI
 
@@ -99,7 +99,7 @@ Create interactive Vue SCADA/HMI tools easily. Our [Vue SCADA/HMI](https://githu
 
 VisuallyJs offers excellent support for Svelte-based SCADA/HMI diagram development. The [Svelte SCADA/HMI](https://github.com/visuallyjs-svelte/scada-hmi) provides a lightweight and reactive approach, helping you build fast SCADA/HMI with minimal overhead.
 
-![VisuallyJs - VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzUgMTM1IiB2ZXJzaW9uPSIxLjEiPgoKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1LCAxMCkiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlPSIjYTQ0MDRmIj4KICAgICAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDcuNSIgaGVpZ2h0PSI0Ny41IiByeD0iMTUiIGZpbGw9IiNlZWFkYjkiLz4KICAgICAgICA8cGF0aCBkPSJNIDQ3LjUsMjMuNzUgTCA4Ny43NSwgMjMuNzUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgICAgIDxjaXJjbGUgY3g9Ijg3Ljc1IiBjeT0iMjMuNzUiIHI9IjEyLjUiIGZpbGw9IiNmZmZmZmYiLz4KICAgIDwvZz4KCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MCwgODApIiBzdHJva2U9IiMzMDc1OTEiIHN0cm9rZS13aWR0aD0iNSI+CiAgICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQ3LjUiIGhlaWdodD0iNDcuNSIgcng9IjE1IiBmaWxsPSIjNzZiZWQ2Ii8+CiAgICAgICAgPHBhdGggZD0iTSAwLDIzLjc1IEwgLTQwLCAyMy43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iLTQ1IiBjeT0iMjMuNzUiIHI9IjEyLjUiIGZpbGw9IiNmZmZmZmYiLz4KICAgIDwvZz4KCjwvc3ZnPgo=)
+![VisuallyJs - VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzUgMTM1IiB2ZXJzaW9uPSIxLjEiPgoKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1LCAxMCkiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlPSIjYTQ0MDRmIj4KICAgICAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDcuNSIgaGVpZ2h0PSI0Ny41IiByeD0iMTUiIGZpbGw9IiNlZWFkYjkiLz4KICAgICAgICA8cGF0aCBkPSJNIDQ3LjUsMjMuNzUgTCA4Ny43NSwgMjMuNzUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgICAgIDxjaXJjbGUgY3g9Ijg3Ljc1IiBjeT0iMjMuNzUiIHI9IjEyLjUiIGZpbGw9IiNmZmZmZmYiLz4KICAgIDwvZz4KCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MCwgODApIiBzdHJva2U9IiMzMDc1OTEiIHN0cm9rZS13aWR0aD0iNSI+CiAgICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQ3LjUiIGhlaWdodD0iNDcuNSIgcng9IjE1IiBmaWxsPSIjNzZiZWQ2Ii8+CiAgICAgICAgPHBhdGggZD0iTSAwLDIzLjc1IEwgLTQwLCAyMy43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iLTQ1IiBjeT0iMjMuNzUiIHI9IjEyLjUiIGZpbGw9IiNmZmZmZmYiLz4KICAgIDwvZz4KCjwvc3ZnPgo=)
 
 ## Need some help?
 
@@ -111,7 +111,7 @@ Chances are we've got something you can use to get you started. Don't see what y
 
 ### [Call Flow](/demonstrations/callflow.md)
 
-[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/callflow-2400.png)](/demonstrations/callflow.md)
+[![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/callflow-2400.png)](/demonstrations/callflow.md)
 
 [Use VisuallyJs to build a visual Call Flow editor](/demonstrations/callflow.md)
 
@@ -123,43 +123,43 @@ Chances are we've got something you can use to get you started. Don't see what y
 
 ### [Chatbot](/demonstrations/chatbot.md)
 
-[![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/chatbot-2400.png)](/demonstrations/chatbot.md)
+[![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/chatbot-2400.png)](/demonstrations/chatbot.md)
 
 [Use VisuallyJs to build a Chatbot editor, with actions, messages, input and choices](/demonstrations/chatbot.md)
 
 ### [Flowchart](/demonstrations/flowchart.md)
 
-[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/flowchart-2400.png)](/demonstrations/flowchart.md)
+[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/flowchart-2400.png)](/demonstrations/flowchart.md)
 
 [Fully featured flowchart builder including support for custom shapes, edge routing to avoid vertices, shape resize/rotate, SVG/PNG/JPG export and more](/demonstrations/flowchart.md)
 
 ### [BPMN](/demonstrations/bpmn.md)
 
-[![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/bpmn-2400.png)](/demonstrations/bpmn.md)
+[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/bpmn-2400.png)](/demonstrations/bpmn.md)
 
 [BPMN editor for modelling the steps of a business process. Pools, lanes, and a full set of task, event and gateway types](/demonstrations/bpmn.md)
 
 ### [ERD](/demonstrations/erd.md)
 
-[![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](https://static.visuallyjs.com/img/app-card/erd-2400.png)](/demonstrations/erd.md)
+[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/erd-2400.png)](/demonstrations/erd.md)
 
 [ERD editor for modelling the steps of a business process](/demonstrations/erd.md)
 
 ### [Gantt](/demonstrations/gantt.md)
 
-[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/gantt-2400.png)](/demonstrations/gantt.md)
+[![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](https://static.visuallyjs.com/img/app-card/gantt-2400.png)](/demonstrations/gantt.md)
 
 [Interactive Gantt chart featuring tasks, task groups and milestones](/demonstrations/gantt.md)
 
 ### [Kanban](/demonstrations/kanban.md)
 
-[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/kanban-2400.png)](/demonstrations/kanban.md)
+[![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/kanban-2400.png)](/demonstrations/kanban.md)
 
 [Fully featured Kanban board. Drag items between columns and use the inspector to update items and columns](/demonstrations/kanban.md)
 
 ### [Database Schema](/demonstrations/schema.md)
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/schema-2400.png)](/demonstrations/schema.md)
+[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/schema-2400.png)](/demonstrations/schema.md)
 
 [Database Schema builder with support for tables, views, multiple columns types, and column relationships](/demonstrations/schema.md)
 
@@ -171,91 +171,91 @@ Chances are we've got something you can use to get you started. Don't see what y
 
 ### [Circuit Diagram](/demonstrations/circuit-diagram.md)
 
-[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/circuit-diagram-2400.png)](/demonstrations/circuit-diagram.md)
+[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/circuit-diagram-2400.png)](/demonstrations/circuit-diagram.md)
 
 [Fully featured starter app containing a circuit diagram builder](/demonstrations/circuit-diagram.md)
 
 ### [Scada/HMI](/demonstrations/scada-hmi.md)
 
-[![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/scada-hmi-2400.png)](/demonstrations/scada-hmi.md)
+[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/scada-hmi-2400.png)](/demonstrations/scada-hmi.md)
 
 [Professional and modern Scada/HMI application with fluid, heating/cooling & instrumentation shapes, adhering to the HMI ISA-101 Design Standard](/demonstrations/scada-hmi.md)
 
 ### [Mindmap](/demonstrations/mindmap.md)
 
-[![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/mindmap-2400.png)](/demonstrations/mindmap.md)
+[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/mindmap-2400.png)](/demonstrations/mindmap.md)
 
 [The mindmap builder highlights several advanced features, such as custom layouts, parsers and exporters](/demonstrations/mindmap.md)
 
 ### [Neighbourhood Views](/demonstrations/neighbourhood-views.md)
 
-[![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/neighbourhood-views-2400.png)](/demonstrations/neighbourhood-views.md)
+[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/neighbourhood-views-2400.png)](/demonstrations/neighbourhood-views.md)
 
 [Demonstrates how to include multiple views of a dataset on one page](/demonstrations/neighbourhood-views.md)
 
 ### [Logic Gates](/demonstrations/logic-gates.md)
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/logic-gates-2400.png)](/demonstrations/logic-gates.md)
+[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/logic-gates-2400.png)](/demonstrations/logic-gates.md)
 
 [Fully featured starter app containing a logic gates diagram builder](/demonstrations/logic-gates.md)
 
 ### [Template](/demonstrations/template.md)
 
-[![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/template-2400.png)](/demonstrations/template.md)
+[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/template-2400.png)](/demonstrations/template.md)
 
 [Basic starter app demonstrating how to setup VisuallyJs and its main features](/demonstrations/template.md)
 
 ### [Area & Line charts](/demonstrations/area-line-chart.md)
 
-[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/area-line-chart-2400.png)](/demonstrations/area-line-chart.md)
+[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/area-line-chart-2400.png)](/demonstrations/area-line-chart.md)
 
 [Use VisuallyJs to create area and line charts](/demonstrations/area-line-chart.md)
 
 ### [Bar & Column charts](/demonstrations/bar-column-chart.md)
 
-[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/bar-column-chart-2400.png)](/demonstrations/bar-column-chart.md)
+[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/bar-column-chart-2400.png)](/demonstrations/bar-column-chart.md)
 
 [Multiple series, stacked, grouped, pivoted, and much more](/demonstrations/bar-column-chart.md)
 
 ### [Scatter & Bubble charts](/demonstrations/scatter-bubble-chart.md)
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/scatter-bubble-chart-2400.png)](/demonstrations/scatter-bubble-chart.md)
+[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/scatter-bubble-chart-2400.png)](/demonstrations/scatter-bubble-chart.md)
 
 [Circle, rectangle, triangle or custom markers, multiple series, fully customizable](/demonstrations/scatter-bubble-chart.md)
 
 ### [Sankey chart](/demonstrations/sankey.md)
 
-[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/sankey-2400.png)](/demonstrations/sankey.md)
+[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/sankey-2400.png)](/demonstrations/sankey.md)
 
 [Use VisuallyJs to create a professional Sankey chart, with support for pivoting](/demonstrations/sankey.md)
 
 ### [Supply Chain Analyzer](/demonstrations/supply-chain.md)
 
-[![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/supply-chain-2400.png)](/demonstrations/supply-chain.md)
+[![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/supply-chain-2400.png)](/demonstrations/supply-chain.md)
 
 [Dashboard for managing and analyzing supply chains](/demonstrations/supply-chain.md)
 
 ### [Network Infrastructure](/demonstrations/network-infrastructure.md)
 
-[![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/network-infrastructure-2400.png)](/demonstrations/network-infrastructure.md)
+[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/network-infrastructure-2400.png)](/demonstrations/network-infrastructure.md)
 
 [Combine a network management diagram with charts showing projected cost and resource usage](/demonstrations/network-infrastructure.md)
 
 ### [Scrolling Lists](/demonstrations/list-manager.md)
 
-[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/list-manager-2400.png)](/demonstrations/list-manager.md)
+[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/list-manager-2400.png)](/demonstrations/list-manager.md)
 
 [Use the ListManager plugin to manage scrolling lists: as elements are scrolled out of the view, their edges are moved to the list container](/demonstrations/list-manager.md)
 
 ### [FIFA World Cup](/demonstrations/fifaworldcup.md)
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/fifaworldcup-2400.png)](/demonstrations/fifaworldcup.md)
+[![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](https://static.visuallyjs.com/img/app-card/fifaworldcup-2400.png)](/demonstrations/fifaworldcup.md)
 
 [A visualizer for the FIFA World cup - group stages, team journeys and a tournament view.](/demonstrations/fifaworldcup.md)
 
 ### [Fault Tree Analysis](/demonstrations/fault-tree-analysis.md)
 
-[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/fault-tree-analysis-2400.png)](/demonstrations/fault-tree-analysis.md)
+[![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/fault-tree-analysis-2400.png)](/demonstrations/fault-tree-analysis.md)
 
 [Combines a fault tree analysis diagram with charts showing risk and list of cut sets](/demonstrations/fault-tree-analysis.md)
 
@@ -269,6 +269,15 @@ DISCOVER
 * [Contact Us](/contact.md)
 * [License Agreement](/license.md)
 * [Privacy Policy](/privacy.md)
+
+SOLUTIONS
+
+* [AI Chatbot Interfaces](/ai-chatbot-interfaces.md)
+* [AI Agent Builders](/ai-agent-builders.md)
+* [Call Flow Interfaces](/call-flow-interfaces.md)
+* [BPMN Modeling Tools](/bpmn-modeling-tools.md)
+* [SCADA/HMI Interfaces](/scada-hmi-interfaces.md)
+* [Database Schema Builders](/database-schema-builders.md)
 
 DEVELOP
 

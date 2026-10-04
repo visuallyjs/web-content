@@ -97,15 +97,15 @@ npx degit git@github.com:visuallyjs-svelte/callflow callflow
 
 ```
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/cisco.png)
+![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/cisco.png)
 
-![When you've reached the limits with ReactFlow, VisuallyJs has what you need](/img/company-logos/oracle.png)
+![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/oracle.png)
 
-![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/walmart.png)
+![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](/img/company-logos/walmart.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/ukg.png)
+![When you've reached the limits with ReactFlow, VisuallyJs has what you need](/img/company-logos/ukg.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/siemens-energy.png)
+![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/siemens-energy.png)
 
 ![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/credit-suisse.png)
 
@@ -179,6 +179,15 @@ DISCOVER
 * [Contact Us](./contact.md)
 * [License Agreement](./license.md)
 * [Privacy Policy](./privacy.md)
+
+SOLUTIONS
+
+* [AI Chatbot Interfaces](./ai-chatbot-interfaces.md)
+* [AI Agent Builders](./ai-agent-builders.md)
+* [Call Flow Interfaces](./call-flow-interfaces.md)
+* [BPMN Modeling Tools](./bpmn-modeling-tools.md)
+* [SCADA/HMI Interfaces](./scada-hmi-interfaces.md)
+* [Database Schema Builders](./database-schema-builders.md)
 
 DEVELOP
 

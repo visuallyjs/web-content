@@ -128,7 +128,7 @@ nodes:{
 
 By default, the orthogonal connector editor will avoid getting into a situation where either end of the connector intersects the source or target vertex. This is best illustrated with a picture:
 
-![Orthogonal connector avoiding vertices - VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/assets/images/orthogonal-vertex-avoid-9fcefb5d55b5b5adae49eab8cea35f12.gif)
+![Orthogonal connector avoiding vertices - VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/assets/images/orthogonal-vertex-avoid-9fcefb5d55b5b5adae49eab8cea35f12.gif)
 
 info
 
