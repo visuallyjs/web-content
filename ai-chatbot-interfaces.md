@@ -93,17 +93,17 @@ npx degit git@github.com:visuallyjs-svelte/chatbot chatbot
 
 ```
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/cisco.png)
+![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/cisco.png)
 
-![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/oracle.png)
+![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/oracle.png)
 
-![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](/img/company-logos/walmart.png)
+![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/walmart.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/ukg.png)
+![When you've reached the limits with ReactFlow, VisuallyJs has what you need](/img/company-logos/ukg.png)
 
-![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/siemens-energy.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/credit-suisse.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/credit-suisse.png)
 
 ## Who builds AI Chatbot UIs with VisuallyJs
 

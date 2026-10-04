@@ -73,17 +73,17 @@ npx degit git@github.com:visuallyjs-svelte/scada-hmi scada-hmi
 
 ```
 
-![VisuallyJs - build diagrams and rich visual UIs fast](/img/company-logos/cisco.png)
+![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](/img/company-logos/cisco.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/oracle.png)
+![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/oracle.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/walmart.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/walmart.png)
 
-![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/ukg.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/ukg.png)
 
 ![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - build diagrams and rich visual UIs fast](/img/company-logos/credit-suisse.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/credit-suisse.png)
 
 ## Who builds industrial automation UIs with VisuallyJs
 

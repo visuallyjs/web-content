@@ -1,4 +1,4 @@
-## [Release 1.2.9](./news-2026-10-04-release-1.2.9.md)
+# Release 1.2.9
 
 October 4, 2026 ·
 

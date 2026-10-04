@@ -148,7 +148,7 @@ connector:{
 
 This will be the resulting behaviour:
 
-![Orthogonal connector intersecting vertices - VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/assets/images/orthogonal-vertex-overlap-f3e8fb219b8294131ab7fbd8194b790f.gif)
+![Orthogonal connector intersecting vertices - VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/assets/images/orthogonal-vertex-overlap-f3e8fb219b8294131ab7fbd8194b790f.gif)
 
 Your users can still route the connector around in this setup but they'll have to move a lot more segments.
 
