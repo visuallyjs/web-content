@@ -10,7 +10,7 @@ VisuallyJs is a flexible, standards-based library for building interactive node-
 
 Apps use <!-- -->Angular<!-- --> components to render each node/group in the display. Functionality can be encapsulated in these components. Node/group sizes in an App are typically dependent on CSS and are managed automatically by VisuallyJs. Apps are great when you need rich content in your nodes/groups and you don't want to be limited to using SVG.
 
-[![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/callflow-2400.png)](/demonstrations/callflow.md)
+[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/callflow-2400.png)](/demonstrations/callflow.md)
 
 [Call Flow](/demonstrations/callflow.md)
 
@@ -20,7 +20,7 @@ Diagrams are pure SVG applications, that draw SVG shapes into an SVG canvas, and
 
 VisuallyJs comes with built-in shape sets like Flowchart and BPMN, and you can easily create your own.
 
-[![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](https://static.visuallyjs.com/img/app-card/flowchart-2400.png)](/demonstrations/flowchart.md)
+[![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/flowchart-2400.png)](/demonstrations/flowchart.md)
 
 [Flowchart](/demonstrations/flowchart.md)
 
@@ -40,7 +40,7 @@ For example, you might have an app representing a manufacturing process where cl
 
 <!-- -->
 
-[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/supply-chain-2400.png)](/demonstrations/supply-chain.md)
+[![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/supply-chain-2400.png)](/demonstrations/supply-chain.md)
 
 [Supply Chain Analyzer](/demonstrations/supply-chain.md)
 

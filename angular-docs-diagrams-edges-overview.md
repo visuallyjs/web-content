@@ -122,7 +122,7 @@ If your edge is using anchor of type `AnchorLocations.Continuous` (which is the 
 
 By default, the orthogonal connector editor will avoid getting into a situation where either end of the connector intersects the source or target vertex. This is best illustrated with a picture:
 
-![Orthogonal connector avoiding vertices - VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/assets/images/orthogonal-vertex-avoid-9fcefb5d55b5b5adae49eab8cea35f12.gif)
+![Orthogonal connector avoiding vertices - VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/assets/images/orthogonal-vertex-avoid-9fcefb5d55b5b5adae49eab8cea35f12.gif)
 
 info
 
@@ -142,7 +142,7 @@ connector:{
 
 This will be the resulting behaviour:
 
-![Orthogonal connector intersecting vertices - VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/assets/images/orthogonal-vertex-overlap-f3e8fb219b8294131ab7fbd8194b790f.gif)
+![Orthogonal connector intersecting vertices - VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/assets/images/orthogonal-vertex-overlap-f3e8fb219b8294131ab7fbd8194b790f.gif)
 
 Your users can still route the connector around in this setup but they'll have to move a lot more segments.
 

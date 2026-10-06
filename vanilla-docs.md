@@ -10,7 +10,7 @@ VisuallyJs is a flexible, standards-based library for building interactive node-
 
 Apps use <!-- -->Javascript<!-- --> components to render each node/group in the display. Functionality can be encapsulated in these components. Node/group sizes in an App are typically dependent on CSS and are managed automatically by VisuallyJs. Apps are great when you need rich content in your nodes/groups and you don't want to be limited to using SVG.
 
-[![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/callflow-2400.png)](/demonstrations/callflow.md)
+[![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/callflow-2400.png)](/demonstrations/callflow.md)
 
 [Call Flow](/demonstrations/callflow.md)
 
@@ -20,7 +20,7 @@ Diagrams are pure SVG applications, that draw SVG shapes into an SVG canvas, and
 
 VisuallyJs comes with built-in shape sets like Flowchart and BPMN, and you can easily create your own.
 
-[![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/flowchart-2400.png)](/demonstrations/flowchart.md)
+[![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/flowchart-2400.png)](/demonstrations/flowchart.md)
 
 [Flowchart](/demonstrations/flowchart.md)
 

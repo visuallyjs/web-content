@@ -89,17 +89,17 @@ npx degit git@github.com:visuallyjs-svelte/schema schema
 
 ```
 
-![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/cisco.png)
+![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/cisco.png)
 
-![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/oracle.png)
+![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/oracle.png)
 
-![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/walmart.png)
+![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/walmart.png)
 
-![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](/img/company-logos/ukg.png)
+![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/ukg.png)
 
-![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/siemens-energy.png)
+![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/credit-suisse.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/credit-suisse.png)
 
 ## Where database schema builders are used
 
