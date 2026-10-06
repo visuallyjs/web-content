@@ -50,7 +50,7 @@ Release 1.2.2 is now available, with new background components for Angular and V
 
 VisuallyJs offers an extensive list of starter apps, diagrams, charts and dashboards to quick start your development, in React, Angular, Vue, Svelte and Typescript/Javascript.
 
-![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](https://static.visuallyjs.com/img/app-card/callflow-1200.png)
+![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/callflow-1200.png)
 
 Call Flow
 
@@ -68,7 +68,7 @@ Chatbot
 
 Use VisuallyJs to build a Chatbot editor, with actions, messages, input and choices
 
-![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/flowchart-1200.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/flowchart-1200.png)
 
 Flowchart
 
@@ -92,67 +92,67 @@ Gantt
 
 Interactive Gantt chart featuring tasks, task groups and milestones
 
-![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/kanban-1200.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/kanban-1200.png)
 
 Kanban
 
 Fully featured Kanban board. Drag items between columns and use the inspector to update items and columns
 
-![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/schema-1200.png)
+![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/schema-1200.png)
 
 Database Schema
 
 Database Schema builder with support for tables, views, multiple columns types, and column relationships
 
-![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/orgchart-1200.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/orgchart-1200.png)
 
 Org Chart
 
 Uses the classic org chart layout and provides an inspector from which the user can navigate around
 
-![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/circuit-diagram-1200.png)
+![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/circuit-diagram-1200.png)
 
 Circuit Diagram
 
 Fully featured starter app containing a circuit diagram builder
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](https://static.visuallyjs.com/img/app-card/scada-hmi-1200.png)
+![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/scada-hmi-1200.png)
 
 Scada/HMI
 
 Professional and modern Scada/HMI application with fluid, heating/cooling & instrumentation shapes, adhering to the HMI ISA-101 Design Standard
 
-![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](https://static.visuallyjs.com/img/app-card/mindmap-1200.png)
+![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/mindmap-1200.png)
 
 Mindmap
 
 The mindmap builder highlights several advanced features, such as custom layouts, parsers and exporters
 
-![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/neighbourhood-views-1200.png)
+![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](https://static.visuallyjs.com/img/app-card/neighbourhood-views-1200.png)
 
 Neighbourhood Views
 
 Demonstrates how to include multiple views of a dataset on one page
 
-![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/logic-gates-1200.png)
+![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/logic-gates-1200.png)
 
 Logic Gates
 
 Fully featured starter app containing a logic gates diagram builder
 
-![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/template-1200.png)
+![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/template-1200.png)
 
 Template
 
 Basic starter app demonstrating how to setup VisuallyJs and its main features
 
-![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/area-line-chart-1200.png)
+![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/area-line-chart-1200.png)
 
 Area & Line charts
 
 Use VisuallyJs to create area and line charts
 
-![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/bar-column-chart-1200.png)
+![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](https://static.visuallyjs.com/img/app-card/bar-column-chart-1200.png)
 
 Bar & Column charts
 
@@ -170,7 +170,7 @@ Sankey chart
 
 Use VisuallyJs to create a professional Sankey chart, with support for pivoting
 
-![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](https://static.visuallyjs.com/img/app-card/supply-chain-1200.png)
+![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](https://static.visuallyjs.com/img/app-card/supply-chain-1200.png)
 
 Supply Chain Analyzer
 
@@ -182,19 +182,19 @@ Network Infrastructure
 
 Combine a network management diagram with charts showing projected cost and resource usage
 
-![VisuallyJs - build diagrams and rich visual UIs fast](https://static.visuallyjs.com/img/app-card/list-manager-1200.png)
+![When you've reached the limits with ReactFlow, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/list-manager-1200.png)
 
 Scrolling Lists
 
 Use the ListManager plugin to manage scrolling lists: as elements are scrolled out of the view, their edges are moved to the list container
 
-![When you've reached the limits with ngDiagram, VisuallyJs has what you need](https://static.visuallyjs.com/img/app-card/fifaworldcup-1200.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](https://static.visuallyjs.com/img/app-card/fifaworldcup-1200.png)
 
 FIFA World Cup
 
 A visualizer for the FIFA World cup - group stages, team journeys and a tournament view.
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](https://static.visuallyjs.com/img/app-card/fault-tree-analysis-1200.png)
+![VisuallyJs - fully featured alternative to ReactFlow and ngDiagram](https://static.visuallyjs.com/img/app-card/fault-tree-analysis-1200.png)
 
 Fault Tree Analysis
 
