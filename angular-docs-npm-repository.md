@@ -10,7 +10,7 @@ The VisuallyJs packages are hosted in two places:
 Note the trailing slash on the repository location: this must be included.
 
 ```javascript
-https://repository.visuallyjs.com/visuallyjs/
+https://download.jsplumbtoolkit.com/repository/visuallyjs/
 
 ```
 
@@ -19,7 +19,7 @@ https://repository.visuallyjs.com/visuallyjs/
 To login to the VisuallyJs NPM repository you use your licensee ID:
 
 ```bash
-npm adduser --registry=https://repository.visuallyjs.com/visuallyjs/
+npm adduser --registry=https://download.jsplumbtoolkit.com/repository/visuallyjs/
 ...
 Username:  <licensee id>
 Password: <...>
@@ -33,7 +33,7 @@ Your password will have been supplied in an email from VisuallyJs.
 You'll need to map the `@visuallyjs` scope to VisuallyJs's NPM repository. For that, ensure your `.npmrc` has this entry:
 
 ```bash
-@visuallyjs:registry=https://repository.visuallyjs.com/visuallyjs/
+@visuallyjs:registry=https://download.jsplumbtoolkit.com/repository/visuallyjs/
 
 ```
 
@@ -49,7 +49,9 @@ Whilst every effort is made to ensure the repository is available at all times, 
 
 ## JFrog Setup[​](#jfrog-setup "Direct link to JFrog Setup")
 
-You can configure the VisuallyJs NPM repository as a remote repository in JFrog.
+You can
+
+To use JFrog to serve VisuallyJs packages you need to setup both a **remote** repository and a **virtual** repository. The remote repository acs as the proxy to our repository, and the virtual repository rewrites the download URLs that our reposut
 
 The steps you need to follow are:
 
@@ -58,55 +60,78 @@ The steps you need to follow are:
 Generate a token on the VisuallyJs NPM repository using the Logon instructions above. The token is written to your .npmrc file in this format:
 
 ```bash
-//repository.visuallyjs.com/visuallyjs/:_authToken=89efb562-f762-adb1-fefe-9834fe32
+//download.jsplumbtoolkit.com/repository/visuallyjs/:_authToken=89efb562-f762-adb1-fefe-9834fe32
 
 ```
 
-2. ### Configure remote repository in JFrog[​](#configure-remote-repository-in-jfrog "Direct link to Configure remote repository in JFrog")
+2. ### Create remote repository in JFrog[​](#create-remote-repository-in-jfrog "Direct link to Create remote repository in JFrog")
 
-info
+![Remote repository config](https://static.visuallyjs.com/img/npm-repository/jfrog/1-create-remote-repository.png)
 
-The repository location in this section is different to the repository location given above. You must use `https://download.jsplumbtoolkit.com/repository/visuallyjs/` as the remote repository URL when configuring JFrog. This is due to early versions of VisuallyJs shipping with that value in their publish config, which JFrog follows strictly.
-
-You **should not** use `https://download.jsplumbtoolkit.com/repository/visuallyjs/` as the repository location when generating the token following the instructions above - use `https://repository.visuallyjs.com/visuallyjs/`, as the instructions detail. Our NPM repository will recognise the token you provide as being valid for VisuallyJs.
+Select `NPM` as the repository type. Then enter these details:
 
 * URL: <https://download.jsplumbtoolkit.com/repository/visuallyjs/>
 * User Name: (your licensee ID)
 * Password/Access Token: 89efb562-f762-adb1-fefe-9834fe32 (in this example - its the token shown from the .npmrc above)
 * Enable Token Authentication: checked
 
-![Remote repository config](https://static.visuallyjs.com/img/npm-repository/jfrog/1-repository-setup-jtk.png)
+![Remote repository config](https://static.visuallyjs.com/img/npm-repository/jfrog/2-configure-remote-repository.png)
 
 When you click the 'Test Connection' button you should see a dialog confirming a successful connection:
 
-![Remote repository connect](https://static.visuallyjs.com/img/npm-repository/jfrog/2-repository-connect-success-jtk.png)
+![Remote repository connect](https://static.visuallyjs.com/img/npm-repository/jfrog/3-connect-success.png)
+
+Your remote repository is now setup - it can proxy requests to our NPM repository. Press `Create Remote Repository` to finalise it. Now click on **Set Up npm Client**.
 
 3. ### Get client config instructions[​](#get-client-config-instructions "Direct link to Get client config instructions")
 
-Click on the three dots at the far end of the line containing the repository information to access the instructions on how to configure your client to use JFrog:
+Enter your JFrog password and click on **Generate Token & Create Instructions**:
 
-![Remote repository connect](https://static.visuallyjs.com/img/npm-repository/jfrog/3-client-setup.png)
+![Generate NPM token](https://static.visuallyjs.com/img/npm-repository/jfrog/4-generate-token.png)
 
-4. ### Generate a token (on JFrog)[​](#generate-a-token-on-jfrog "Direct link to Generate a token (on JFrog)")
-
-This token is stored on JFrog and is per-user. You will need to store this token locally.
-
-![Remote repository connect](https://static.visuallyjs.com/img/npm-repository/jfrog/4-client-generate-token-jtk.png)
-
-5. ### Get .npmrc instructions[​](#get-npmrc-instructions "Direct link to Get .npmrc instructions")
+4. ### Get .npmrc instructions[​](#get-npmrc-instructions "Direct link to Get .npmrc instructions")
 
 Once the token has been created, scroll down to the **Edit .npmrc (scoped)** section. VisuallyJs is a scoped NPM package.
 
-![Remote repository connect](https://static.visuallyjs.com/img/npm-repository/jfrog/5-client-npmrc-jtk.png)
+![Remote repository connect](https://static.visuallyjs.com/img/npm-repository/jfrog/5-npmrc-instructions.png)
 
-6. ### Edit your .npmrc[​](#edit-your-npmrc "Direct link to Edit your .npmrc")
+7. ### Edit your .npmrc[​](#edit-your-npmrc "Direct link to Edit your .npmrc")
 
 Lastly, edit your .npmrc to include the instructions JFrog supplied - the url to the registry to use, and the JFrog auth token:
 
 ```shell
-@visuallyjs:registry=https://your-host.jfrog.io/artifactory/api/npm/VisuallyJs/
+@visuallyjs:registry=https://YOUR-HOST.jfrog.io/artifactory/api/npm/visuallyjs/
 
-//your-host.jfrog.io/artifactory/api/npm/VisuallyJs/:_authToken=cmVmdGtuOjAxOjE4MjE3Mzg4OTM6R1Z5R292SFJaNHR6ckFWaVN1ZjAxT1BlOHpv
+//YOUR-HOST.jfrog.io/artifactory/api/npm/visuallyjs/:_authToken=cmVmdGtuOjAxOjE4MjE3Mzg4OTM6R1Z5R292SFJaNHR6ckFWaVN1ZjAxT1BlOHpv
+
+
+```
+
+8. ### Verifying your setup[​](#verifying-your-setup "Direct link to Verifying your setup")
+
+You can verify this is all setup correctly by running an `npm view` command:
+
+```shell
+npm view @visuallyjs/browser-ui@latest
+
+```
+
+You should see output like this:
+
+```shell
+@visuallyjs/browser-ui@1.2.9 | Commercial | deps: none | versions: 18
+VisuallyJs
+https://visuallyjs.com/
+
+dist
+.tarball: https://YOUR-HOST.jfrog.io/artifactory/api/npm/visuallyjs/@visuallyjs/browser-ui/-/1.2.9.tgz
+.shasum: a5dcc4043c21fd8650c4512d1ef53660c04cf71e
+.integrity: sha512-Vo5Rrv9CnjokUX9riKFGTEznPB/tAc24tg4THXTdRBq+H86iMAvP864H9j5j3NBn6q3pShcV22Jn7fK7idVpFA==
+
+dist-tags:
+latest: 1.2.9  
+
+published yesterday
 
 
 ```

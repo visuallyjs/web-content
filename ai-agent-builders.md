@@ -71,15 +71,15 @@ npx degit git@github.com:visuallyjs-svelte/ai-agent-builder ai-agent-builder
 
 ```
 
-![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/cisco.png)
+![VisuallyJs - build diagrams and rich visual UIs fast](/img/company-logos/cisco.png)
 
-![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/oracle.png)
+![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/oracle.png)
 
-![VisuallyJs - build diagrams and rich visual UIs fast](/img/company-logos/walmart.png)
+![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/walmart.png)
 
-![VisuallyJs - callflow builders, sankey charts, database schemas, ERD diagrams and more](/img/company-logos/ukg.png)
+![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/ukg.png)
 
-![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/siemens-energy.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/siemens-energy.png)
 
 ![VisuallyJs - effortlessly build professional node based UIs with Javascript, Typescript, React, Svelte, Angular and Vue](/img/company-logos/credit-suisse.png)
 
