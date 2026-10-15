@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.10[​](#1210 "Direct link to 1.2.10")
+
+15th October 2026
+
+* Updated React Surface and Paper components to improve performance and reduce bundle size.
+* Introduced batched CSS class add/remove, to reduce reflows.
+
 ## 1.2.9[​](#129 "Direct link to 1.2.9")
 
 4th October 2026

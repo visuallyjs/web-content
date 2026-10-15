@@ -1,15 +1,17 @@
-## [Release 1.2.9](./news-2026-10-04-release-1.2.9.md)
+## [Release 1.2.10](./news-2026-10-15-release-1.2.10.md)
 
-October 4, 2026 ·
+October 15, 2026 ·
 
 <!-- -->
 
 One min read
 
-Release 1.2.9 is now available. In this release:
+Release 1.2.10 is now available. In this release:
 
 ### General[​](#general "Direct link to General")
 
-* Refactored bulk loader code to implement a 4x performance improvement
-* Updated packages to remove the `publishConfig` section of the package.json. This improves the portability of the built artifacts, allowing them to be uploaded to private NPM repositories without retaining the reference to the VisuallyJs repository URL.
-* Added support for `minZoom` and `maxZoom` options on overlays: overlays can now be hidden/shown based upon the zoom level of the UI.
+* Refactored the internal approach to adding CSS classes to apply additions/removals in a batch, reducing reflows
+
+### React[​](#react "Direct link to React")
+
+* Refactored Surface and Paper components to improve rendering speed
