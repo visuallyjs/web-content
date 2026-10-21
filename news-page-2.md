@@ -1,85 +1,131 @@
-## [Release 1.2.0](/news/2026/07/15/release-1.2.0.md)
+## [Release 1.2.1](/news/2026/07/27/release-1.2.1.md)
 
-July 15, 2026 ·
+July 27, 2026 ·
 
 <!-- -->
 
-5 min read
+7 min read
 
 sporritt
 
-This release focuses on a few main things:
+We've pleased to announce the release of VisuallyJs 1.2.1, containing several useful new features and a couple of great starter apps.
 
-## Hooks and Reactivity[​](#hooks-and-reactivity "Direct link to Hooks and Reactivity")
+* Popups - components that VisuallyJs automatically keeps aligned with some vertex in your canvas, adjusting for pan/zoom as necessary
+* A brand AI Agent Builder starter app was added
+* Component overlays for Vue and Svelte - use components as overlays, fully wired into the reactive state and the VisuallyJs data model
+* Support for marking up properties inside inspectors as belonging to ports on a vertex, allowing you to edit ports in your data model alongside the nodes they belong to
+* Several new signals were added to the BaseVertexComponent in Angular, providing reactive state that exposes the edges attached to the vertex.
+* We added a new renderer - the Paper component. This is a "static" version of the Surface: nodes, groups and edges are all rendered in the same way, but the view does not support pan or zoom, and the canvas is scaled automatically so that the content is always visible in the viewport.
+* We dusted off the FIFA World Cup visualization from 2018 and released it as a starter app for VisuallyJs.
 
-We've updated each of our integrations to be more reactive - the React hooks, for instance, now return reactive state instead of Promises and the Angular service exposes its various members as signals, instead of getters with callbacks. Additionally, we've added a `useVisuallyJsUpdate()` hook to each of our integrations, allowing you to easily extract a dynamically updating value from the underlying model.
+## Popups[​](#popups "Direct link to Popups")
 
-## Inspectors[​](#inspectors "Direct link to Inspectors")
+![AI Agent Builder](https://static.visuallyjs.com/img/blog/1.2.1/popups.png)
 
-Our Vue and Svelte inspectors have been updated to interoperate seamlessly with a piece of reactive state, cutting down on the amount of boilerplate you're required to write
+## AI Agent Builder[​](#ai-agent-builder "Direct link to AI Agent Builder")
 
-## Starter apps[​](#starter-apps "Direct link to Starter apps")
+![AI Agent Builder](https://static.visuallyjs.com/img/app-card/ai-agent-builder-2400.png)
 
-Each of our library integrations - Vue, React, Svelte and Angular - offers the same full list of starter apps, and all of our starter apps have been updated to take advantage of the many updates 1.2.0 has to offer.
+Everyone's got one of these, and now we do too! But we're pleased to be able to report that this app required far fewer lines of code than similar demonstrations from other libraries (almost 1/5th of the size of the codebase from another well-known diagramming library!). Our AI Agent Builder is fully featured and ready for you to drop in to your app, or use as a base for your own. [Check it out here](https://visuallyjs.com/demonstrations/ai-agent-builder) - a link to the repository is on the demo page.
+
+## Component overlays[​](#component-overlays "Direct link to Component overlays")
+
+Support for using components as overlays has been in our Angular and React integrations for some time now. In 1.2.1 we've also added this feature to our Vue and Svelte integrations.
+
+## Port Inspectors[​](#port-inspectors "Direct link to Port Inspectors")
+
+Inspectors provide a convenient means of wiring up property editors to the vertices in your app. Prior to 1.2.1, though, if you wanted to edit the properties of ports on your vertices, you'd have to setup a separate rendering condition for them. In 1.2.1 we've added support for a new `vjs-port` attribute, which allows you to tell VisuallyJs that some input field in your inspector pertains to a port, not the vertex:
+
+```html
+<div>
+  <input vjs-att="label"/>  
+  <input vjs-port="yes" vjs-att="label"/>
+  <input vjs-port="no" vjs-att="label"/>
+</div>
+
+```
+
+Here, our inspector allows us to edit the 'label' property on the vertex itself, as well as each of the vertex's ports.
+
+## Angular Signals[​](#angular-signals "Direct link to Angular Signals")
+
+With every release we're modernising and tightening up our Angular integration, and 1.2.1 is no exception - we've added several signals to the BaseVertexComponent, allowing you to reactively access the edges attached to a given vertex. This makes it easy to do things like showing an 'add child' button if the node has no children, for example:
+
+```javascript
+@Component({
+  template:`<div>
+  <h1>{{$data().label}}</h1>
+  @if(sourceEdges().length === 0) {
+    <button (click)="addChild">Add Child</button>
+  }`
+})
+
+export class MyComponent extends BaseNodeComponent {}
+
+```
+
+You can get the list of source/target edges connected to just the vertex itself, or all of the source/target edges connected to the vertex and any of its ports.
+
+We've also updated the `SurfaceComponent`, `PaperComponent` and `DiagramComponent` to convert the `data` and `url` inputs into signals. You can still use them as plain old inputs, but now you can wire them up to signals and have the component reload dynamically.
+
+## Paper Component[​](#paper-component "Direct link to Paper Component")
+
+Sometimes you want to render a static view of your dataset, without given users the ability to pan, zoom or drag elements around - but you still want them to be able to interact with, and update, the model. The Paper component gives you that. It's a version of the Surface without pan, zoom or element dragging, and it automatically scales its canvas to fit inside the bounds of the viewport (unless you don't want it to; you can switch off scaling and have it fill its natural size, and the parent will scroll if needs be).
+
+We're using this component in the Group Stage and Journey View components of our FIFA World Cup visualizer - we look forward to seeing what you build with it!
+
+## FIFA World Cup[​](#fifa-world-cup "Direct link to FIFA World Cup")
+
+We released this for JsPlumb back in 2018 but we've always had a soft spot for some of the visualizations it contains, so we've updated it for VisuallyJs and added to our list of starter apps. It's a great showcase for the range of things you can easily build with VisuallyJs, containing several different views of the data, and integrating natively with React, Angular, Vue and Svelte.
+
+![FIFA World Cup](https://static.visuallyjs.com/img/app-card/fifaworldcup-2400.png)
+
+The group stage view, with its high "data-ink" ratio, is one of our favourites:
+
+![FIFA Group Stage](https://static.visuallyjs.com/img/blog/world-cup-group-stage.png)
+
+We're also quite partial to the "journey view", which takes advantage of our new Paper component to render a static view:
+
+![FIFA Journey Viewer](https://static.visuallyjs.com/img/blog/world-cup-journey-stage.png)
+
+[Check out the demonstration here](https://visuallyjs.com/demonstrations/fifaworldcup). There's a link to the repo if you want to clone it.
 
 ## Changelog[​](#changelog "Direct link to Changelog")
 
-### General updates[​](#general-updates "Direct link to General updates")
+### General[​](#general "Direct link to General")
 
-* Circular layout has new `centerContent` option, to avoid placing nodes in negative space (useful when used inside a Group in particular)
-* New config `groupProperty` added to model options. You can set the name of the property that identifies group membership in your node/group data, if the default value of `group` clashes with your dataset.
-* Added `SelectionGenerator` type, defining the `generator` function that can be used to fill a `VisuallyJsSelection`
-* Updated transaction handling to ensure the `transaction(...)` method could be nested cleanly
-* Added functionality to the `Palette` in "tap" mode where you can tap an item again to exit the drag (previously you'd have to press Escape)
-
-### React[​](#react "Direct link to React")
-
-* `data` and `url` are now reactive props in the React `SurfaceComponent`. A small but very powerful change, allowing much greater composability of the `SurfaceComponent` in your apps
-* Added new React `PaperComponent`, which functions as a static version of a surface - no pan/zoom or dragging, and the content is zoomed to fit the viewport at all times.
-* Added new `useVisuallyJsUpdate` hook. This hook lets you respond to updates in the underlying model, and is handy for such use cases as components which display information about the current state of the model.
-* (breaking) The `useZoom()`, `useVisuallyJsModel()` and `useDiagram()` React hooks now return a reactive state object instead of a Promise.
-
-### Angular[​](#angular "Direct link to Angular")
-
-* Added new `useVisuallyJsUpdate` hook. This hook lets you respond to updates in the underlying model, and is handy for such use cases as components which display information about the current state of the model.
-* Added new `useZoom` hook, providing access to a signal containing the current zoom for the UI in context.
-* Converted the `VisuallyJsService` to expose model/surface/paper/diagram as signals, and deprecated the previous callback approach to accessing these members.
-* Updated the `Gantt` starter app to have feature parity with the React Gantt
-
-### Svelte[​](#svelte "Direct link to Svelte")
-
-* Added new `useVisuallyJsUpdate` hook. This hook lets you respond to updates in the underlying model, and is handy for such use cases as components which display information about the current state of the model.
-* Added new `NetworkInfrastructure` and `SupplyChain` starter apps. These are clones of the same apps that previously only existed for React/Angular, demonstrating how to build integrated dashboards with various VisuallyJs components sharing a single model.
-* Added `BPMN` starter app
-* Updated the `Gantt` starter app to have feature parity with the React Gantt
-* Updated all of the chart components to source their data from a model in scope, when data/url not provided
-* Replaced all usages of `<slot></slot>` elements with the modern `{@render children?.()}` syntax
-* Updated `InspectorComponent` to optionally take a 2-way state object defining the current selection. This reduces the amount of boilerplate code required to use the inspector.
-* Updated the `SankeyChartComponent` to set the `pivot` property to be reactive
-* Added `Mindmap` starter app
-* (breaking) The `useZoom()` hook no longer takes `ui` as a prop; it finds the UI from the context
-
-### Vue[​](#vue "Direct link to Vue")
-
-* Added new `useVisuallyJsUpdate` composable
-* Updated the `Gantt` starter app to have feature parity with the React Gantt
-* Updated `InspectorComponent` to support passing in a `v-model`, which is a reactive object that references the current selected object. Using this, you can do away with the need for `refresh` and `renderEmptyContainer` functions (and that approach is now deprecated)
-* Added `BPMN` starter app
-* Added `useSurface`, `usePaper` and `useDiagram` composables, for access to the UI in scope
-* (breaking) Updated `useZoom` to not take a `ui` as argument, instead resolving the UI from the context
-* Added `ERD` starter app - an entity relationship diagram
-* Added `Mindmap` starter app
-* Added new `NetworkInfrastructure` starter app
+* The `EVENT_GRAPH_CLEARED` event, fired by the model, now passes the model that fired it as a payload.
+* The Surface was updated to fix an issue where it was holding on to stale viewport dimensions: calling `zoomToFit` after external change to viewport element size would use the cached dimensions.
+* Added the `data-vjs-no-events` attribute which can be set on any element inside a node vertex, marking it as excluded from firing mouse events for that vertex.
+* Updated `centerOn` and `centerOnAndZoom` in the Surface to support optional centering on multiple elements as opposed to just a single one.
+* Added support for a `vjs-port` attribute on controls inside an inspector. This allows you to edit properties on ports inside your vertices from the vertex inspector.
 
 ### Breaking[​](#breaking "Direct link to Breaking")
 
-* The `useZoom()`, `useVisuallyJsModel()` and `useDiagram()` React hooks now return a reactive state object instead of a Promise.
-* The `useZoom()` hook in the Svelte integration no longer takes `ui` as a prop; it finds the UI from the context
-* The `useZoom()` composable in the Vue integration no longer takes a `ui` as argument, instead resolving the UI from the context
+* The previous `Index` class was renamed to `GraphSearchIndex`
+* In `BaseAngularOverlayComponent`, the `surface` member was renamed to `ui`; its type is now derived from a type parameter on the class (which you declare when you create a subclass)
 
-### Deprecated[​](#deprecated "Direct link to Deprecated")
+### React[​](#react "Direct link to React")
 
-* The `getModel`, `getSurface`, `getPaper`, `getInspector` and `getDiagrams` methods of the Angular `VisuallyJsService` are deprecated. Use the signals based approach instead.
-* The `refresh` and `renderEmptyContainer` functions in the `InspectorComponent` for both the Vue and Svelte integrations are deprecated; see above for alternatives.
+* The `useZoom` hook no longer requires that a `ui` can be passed in: it can derive one from the context.
+* `overlays` is now marked optional in the `ReactEdgeMapping` interface used in view options
+* Added `SurfacePopup` component, an automatic mechanism for launching a popup on a vertex component and keeping it located correctly as the user pans, zooms and drags the vertex.
+* `InspectorComponent` updated to function correctly inside a `PaperProvider` or `PaperComponent`
 
-[**Read more**](/news/2026/07/15/release-1.2.0.md)
+### Vue[​](#vue "Direct link to Vue")
+
+* Added `SurfacePopup` component, an automatic mechanism for launching a popup on a vertex component and keeping it located correctly as the user pans, zooms and drags the vertex.
+* Added support for Vue component overlays
+
+### Svelte[​](#svelte "Direct link to Svelte")
+
+* Added `SurfacePopup` component, an automatic mechanism for launching a popup on a vertex component and keeping it located correctly as the user pans, zooms and drags the vertex.
+* Added support for Svelte component overlays
+
+### Angular[​](#angular "Direct link to Angular")
+
+* Added `SurfacePopup` component, an automatic mechanism for launching a popup on a vertex component and keeping it located correctly as the user pans, zooms and drags the vertex.
+* Added several new signals to the `BaseVertexComponent` - `sourceEdges()`, `allSourceEdges()`, `targetEdges()` and `allTargetEdges()`. With these signals you can dynamically respond to connectivity changes inside your templates.
+* Added `PaperComponent` - a fixed view version of SurfaceComponent, with the same support for rendering but no pan/zoom, and which automatically adjusts its dimensions to fit into its viewport. The "data" and "url" inputs on the `SurfaceComponent`, `PaperComponent` and `DiagramComponent` of the Angular integration were updated to be reactive - you can hook them up to some state and have the component reload the dataset automatically.
+
+[**Read more**](/news/2026/07/27/release-1.2.1.md)

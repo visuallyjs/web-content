@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.11[​](#1211 "Direct link to 1.2.11")
+
+21st October 2026
+
+* Performance enhancements for the underlying RTree.
+* Support for `astarGridCellSize`, `astarVertexBorder` and `astarVertexBuffer` added to the `edges` section of `DiagramOptions` - you can now fine-tune the behaviour of the vertex avoidance routines in a diagram.
+
 ## 1.2.10[​](#1210 "Direct link to 1.2.10")
 
 15th October 2026

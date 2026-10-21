@@ -154,6 +154,8 @@ The props that are passed in to a component used to render a node/group by a sur
 
 ## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
 
+## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
+
 You might want to show more detail when zoomed in and less detail when zoomed out. VisuallyJs provides a `useZoom` composable to assist you with this.
 
 ```html

@@ -1,17 +1,12 @@
-## [Release 1.2.10](./news-2026-10-15-release-1.2.10.md)
+## [Release 1.2.11](./news-2026-10-21-release-1.2.11.md)
 
-October 15, 2026 ·
+October 21, 2026 ·
 
 <!-- -->
 
 One min read
 
-Release 1.2.10 is now available. In this release:
+Release 1.2.11 is now available. In this release:
 
-### General[​](#general "Direct link to General")
-
-* Refactored the internal approach to adding CSS classes to apply additions/removals in a batch, reducing reflows
-
-### React[​](#react "Direct link to React")
-
-* Refactored Surface and Paper components to improve rendering speed
+* Significant performance enhancements for bulk operations in the underlying RTree.
+* Support for `astarGridCellSize`, `astarVertexBorder` and `astarVertexBuffer` added to the `edges` section of `DiagramOptions` - you can now fine-tune the behaviour of the vertex avoidance routines in a diagram.

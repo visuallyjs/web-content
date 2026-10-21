@@ -97,13 +97,13 @@ npx degit git@github.com:visuallyjs-svelte/chatbot chatbot
 
 ![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/oracle.png)
 
-![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/walmart.png)
+![VisuallyJs - build diagrams and rich visual UIs fast](/img/company-logos/walmart.png)
 
-![When you've reached the limits with SvelteFlow, VisuallyJs has what you need](/img/company-logos/ukg.png)
+![VisuallyJs - leading alternative to GoJS, JointJS, ReactFlow and SvelteFlow](/img/company-logos/ukg.png)
 
-![When you've reached the limits with ngDiagram, VisuallyJs has what you need](/img/company-logos/siemens-energy.png)
+![VisuallyJs - industry standard diagramming and rich visual UI Javascript and Typescript library](/img/company-logos/siemens-energy.png)
 
-![VisuallyJs - JavaScript and Typescript diagramming library that fuels exceptional UIs](/img/company-logos/credit-suisse.png)
+![VisuallyJs - flowcharts, AI Agent builders, chatbots, bar charts, decision trees, mindmaps, org charts and more](/img/company-logos/credit-suisse.png)
 
 ## Who builds AI Chatbot UIs with VisuallyJs
 

@@ -113,7 +113,7 @@ We also specified `padding:10` so that some space appears around the child group
 
 Groups can be configured to automatically resize themselves to encompass the extents of their child nodes/groups, via the `autoSize` flag on a group definition in a view:
 
-```javascript
+```typescript
 {
   groups:{
     "groupType1":{
@@ -146,7 +146,7 @@ By default, every group has an [AbsoluteLayout]() assigned to it. If your node d
 
 To specify the layout for a specific type of group, set it in that group's entry in your view:
 
-```javascript
+```typescript
  {
     ...
     groups:{
@@ -187,30 +187,39 @@ Groups can be collapsed and expanded. To add a control to your group to manage c
 
 ```
 
-When you collapse a group, any edges from any of the member nodes/groups in the group to nodes/groups outside of the group are relocated to the group's container, and a CSS class is applied to the group's container, indicating the collapsed state. When you subsequently expand the group, the edges are placed back onto their appropriate nodes/groups.
+The markup shown above draws the caret in the top right corner of the group templates.
 
-It is important to note that when a group is collapsed, VisuallyJs does not hide the member nodes/groups automatically for you. But a CSS class of `vjs-group-collapsed` is added to the group's container, for you to handle this in your CSS.
+**********
 
-The anchor to be used in the collapsed state can be specified in the group definition in the `viewOptions`:
+### Edge proxies[​](#edge-proxies "Direct link to Edge proxies")
 
-```html
-<script setup lang="ts">
+When you collapse a group, any edges from any of the member nodes/groups in the group to nodes/groups outside of the group are relocated to the group's container. When you subsequently expand the group, the edges are placed back onto their appropriate nodes/groups.
+
+The anchor to be used for a group in the collapsed state can be specified in the group definition in the `viewOptions`:
+
+```typescript
 import { AnchorLocations } from "@visuallyjs/browser-ui"
-import MyGroup from "./MyGroup.vue"
 
 const viewOptions = {
   groups:{
     "groupType1":{
-      component: MyGroup,
+      component: MyGroupComponent,
       anchor:AnchorLocations.Continuous
     }
   } 
 }
-</script>
 
 ```
 
-Any valid anchor can be used here.
+Any valid anchor can be used here. It defaults to the VisuallyJs default - `Continuous`.
+
+### Collapsed group CSS class[​](#collapsed-group-css-class "Direct link to Collapsed group CSS class")
+
+When a group is collapsed, a CSS class of `vjs-group-collapsed` is assigned to the group's container.
+
+Important
+
+When a group is collapsed, VisuallyJs **does not hide the member nodes/groups automatically for you**. You can use the `.vjs-group-collapsed` CSS class to hide the child vertices.
 
 ### Collapsed Group Size[​](#collapsed-group-size "Direct link to Collapsed Group Size")
 
@@ -222,77 +231,25 @@ An optional function `(group: Group, currentSize: Size) => Size` passed into the
 
 Return `null` or `undefined` to fall through to the next source. This is the right place for size logic that depends on runtime state or per-instance group data.
 
-```html
-<script setup>
-
-const renderOptions = {
-  getGroupCollapsedSize: (group, currentSize) => {
-  return { width:200, height:60 }
-}
-}
-
-
-</script>
-<template>
-  <SurfaceComponent :renderOptions="renderOptions" />
-</template>
-
-```
+<!-- -->
 
 * `collapsedSize`
 
 A static `Size` value declared in the view definition for a group type. Used when `getGroupCollapsedSize` was not supplied or returned null. Applies uniformly to every group of that type.
 
-```html
-<script setup>
-
-function viewOptions() {
-  return {
-  groups: {
-    default: {
-      collapsedSize: {
-        width: 200,
-        height: 60
-      }
-    }
-  }
-}
-    }
-
-</script>
-<template>
-  <SurfaceComponent :viewOptions="viewOptions()" />
-</template>
-
-```
+<!-- -->
 
 * `defaultCollapsedGroupSize`
 
 A `Size` value passed when constructing the surface or UI instance. Acts as a global fallback for all groups when none of the above sources produce a value.
 
-```html
-<script setup>
-
-const renderOptions = {
-  defaultCollapsedGroupSize: {
-    width: 200,
-    height: 60
-  }
-}
-
-
-</script>
-<template>
-  <SurfaceComponent :renderOptions="renderOptions" />
-</template>
-
-```
+<!-- -->
 
 Lastly, if none of the previous sources returns a value, the built-in default of `{ width: 200, height: 150 }` is used.
 
 Magnetizing when collapsed/expanded
 
-By default, the surface widget will run the [Magnetizer](/vue/docs/apps/magnetizer.md) whenever a group is collapsed or expanded: when a group is expanded, surrounding elements are adjusted so as to ensure the group does not intersect with any other element. When a group is collapsed, the rest of the elements in the view are gathered in towards the collapsed group. This behaviour can be switched off - see the `afterGroupChange` flag in the [Surface widget magnetizer options](/vue/docs/apps/magnetizer.md#surface-widget)
+By default, the surface widget will run the [Magnetizer](/undefined/docs/magnetizer) whenever a group is collapsed or expanded: when a group is expanded, surrounding elements are adjusted so as to ensure the group does not intersect with any other element. When a group is collapsed, the rest of the elements in the view are gathered in towards the collapsed group. This behaviour can be switched off - see the `afterGroupChange` flag in the [Surface widget magnetizer options](/undefined/docs/magnetizer#surface-widget)
 
 ***
 
@@ -300,37 +257,38 @@ By default, the surface widget will run the [Magnetizer](/vue/docs/apps/magnetiz
 
 Elastic groups allow your users to dynamically resize a group by dragging its child elements around inside of it. To setup a group as elastic:
 
-```javascript
+```typescript
 {
     groups:{
         default:{
-            elastic:true,
-            minSize:{ width:250, height:250 }    // optional, but it does tend to help aesthetically to have a minSize.
+            elastic:true
         }
     }
 }
 
 ```
 
-Try dragging the node inside the group - you'll see the group displays a skeleton element showing how it would be resized to accommodate the node's new position. On mouseup the group is then resized:
+Try dragging a node inside the group - you'll see the group displays a skeleton element showing how it would be resized to accommodate the node's new position. On mouseup the group is then resized:
 
 **********
 
 ### Dragging elements out of an elastic group[​](#dragging-elements-out-of-an-elastic-group "Direct link to Dragging elements out of an elastic group")
 
-To drag a child node out of an elastic group, hold down the Shift key prior to the drag.
+To drag a child node out of an elastic group, hold down the `Shift` key prior to the drag.
 
 ### Suppressing resize[​](#suppressing-resize "Direct link to Suppressing resize")
 
-Ordinarily, dragging a child vertex of an elastic group will cause the group to resize to fit its content. Holding the `shift` key can also be used to switch off elastic resize while an element is being dragged.
+Ordinarily, dragging a child vertex of an elastic group will cause the group to resize to fit its content. Holding the `Shift` key can also be used to switch off elastic resize while an element is being dragged.
 
 ### Dragging the group and the node[​](#dragging-the-group-and-the-node "Direct link to Dragging the group and the node")
 
-If you hold down the Meta key (Command on macs), you can drag child nodes/groups within their parent, and when the node reaches the bounds of the parent, the parent will relocate along with the child. It's easier to show this than explain it - try it on the canvas above.
+If you hold down the `Meta` key (`Command` on macs), you can drag child nodes/groups within their parent, and when the node reaches the bounds of the parent, the parent will relocate along with the child. It's easier to show this than explain it - try it on the canvas above.
 
 ### Nested elastic groups[​](#nested-elastic-groups "Direct link to Nested elastic groups")
 
 Elastic groups which are themselves children of another elastic group will relay size changes during dragging to their parent, so that the user can see what changes will be made to all the groups.
+
+***
 
 ## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
 
@@ -365,6 +323,8 @@ const zoom = useZoom(props.ui)
 </template>
 
 ```
+
+***
 
 ## View options[​](#view-options "Direct link to View options")
 
@@ -419,6 +379,8 @@ The props that are passed in to a component used to render a node/group by a sur
 | obj    | T                  | The vertex (node or group) that is being rendered |
 | ui     | [BrowserUI]()      | Underlying UI                                     |
 | vertex | T                  | The vertex (node or group) that is being rendered |
+
+***
 
 ## Managing element size[​](#managing-element-size "Direct link to Managing element size")
 

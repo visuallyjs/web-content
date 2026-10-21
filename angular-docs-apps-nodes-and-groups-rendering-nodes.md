@@ -160,6 +160,8 @@ export class ContextNodeComponent extends BaseNodeComponent {
 
 ## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
 
+## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
+
 You might want to show more detail when zoomed in and less detail when zoomed out. VisuallyJs exposes a signal called `zoom()` on `BaseVertexComponent` to assist you with this.
 
 ```html

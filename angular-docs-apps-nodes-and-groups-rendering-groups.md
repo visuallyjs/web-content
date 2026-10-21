@@ -190,11 +190,15 @@ Groups can be collapsed and expanded. To add a control to your group to manage c
 
 ```
 
-When you collapse a group, any edges from any of the member nodes/groups in the group to nodes/groups outside of the group are relocated to the group's container, and a CSS class is applied to the group's container, indicating the collapsed state. When you subsequently expand the group, the edges are placed back onto their appropriate nodes/groups.
+The markup shown above draws the caret in the top right corner of the group templates.
 
-It is important to note that when a group is collapsed, VisuallyJs does not hide the member nodes/groups automatically for you. But a CSS class of `vjs-group-collapsed` is added to the group's container, for you to handle this in your CSS.
+**********
 
-The anchor to be used in the collapsed state can be specified in the group definition in the `viewOptions`:
+### Edge proxies[​](#edge-proxies "Direct link to Edge proxies")
+
+When you collapse a group, any edges from any of the member nodes/groups in the group to nodes/groups outside of the group are relocated to the group's container. When you subsequently expand the group, the edges are placed back onto their appropriate nodes/groups.
+
+The anchor to be used for a group in the collapsed state can be specified in the group definition in the `viewOptions`:
 
 ```typescript
 import { AnchorLocations } from "@visuallyjs/browser-ui"
@@ -210,7 +214,15 @@ const viewOptions = {
 
 ```
 
-Any valid anchor can be used here.
+Any valid anchor can be used here. It defaults to the VisuallyJs default - `Continuous`.
+
+### Collapsed group CSS class[​](#collapsed-group-css-class "Direct link to Collapsed group CSS class")
+
+When a group is collapsed, a CSS class of `vjs-group-collapsed` is assigned to the group's container.
+
+Important
+
+When a group is collapsed, VisuallyJs **does not hide the member nodes/groups automatically for you**. You can use the `.vjs-group-collapsed` CSS class to hide the child vertices.
 
 ### Collapsed Group Size[​](#collapsed-group-size "Direct link to Collapsed Group Size")
 
@@ -222,79 +234,25 @@ An optional function `(group: Group, currentSize: Size) => Size` passed into the
 
 Return `null` or `undefined` to fall through to the next source. This is the right place for size logic that depends on runtime state or per-instance group data.
 
-```typescript
-import { Component, ViewChild } from '@angular/core';
-import { SurfaceComponent } from '@visuallyjs/browser-ui-angular';
-
-@Component({
-  selector: 'app-root',
-  template: ` <vjs-surface [renderOptions]="renderOptions"></vjs-surface> `
-})
-export class AppComponent {
-  renderOptions = {
-  getGroupCollapsedSize: (group, currentSize) => {
-  return { width:200, height:60 }
-}
-};
-}
-
-```
+<!-- -->
 
 * `collapsedSize`
 
 A static `Size` value declared in the view definition for a group type. Used when `getGroupCollapsedSize` was not supplied or returned null. Applies uniformly to every group of that type.
 
-```typescript
-import { Component, ViewChild } from '@angular/core';
-import { SurfaceComponent } from '@visuallyjs/browser-ui-angular';
-
-@Component({
-  selector: 'app-root',
-  template: ` <vjs-surface [viewOptions]="viewOptions"></vjs-surface> `
-})
-export class AppComponent {
-  viewOptions = {
-  groups: {
-    default: {
-      collapsedSize: {
-        width: 200,
-        height: 60
-      }
-    }
-  }
-};
-}
-
-```
+<!-- -->
 
 * `defaultCollapsedGroupSize`
 
 A `Size` value passed when constructing the surface or UI instance. Acts as a global fallback for all groups when none of the above sources produce a value.
 
-```typescript
-import { Component, ViewChild } from '@angular/core';
-import { SurfaceComponent } from '@visuallyjs/browser-ui-angular';
-
-@Component({
-  selector: 'app-root',
-  template: ` <vjs-surface [renderOptions]="renderOptions"></vjs-surface> `
-})
-export class AppComponent {
-  renderOptions = {
-  defaultCollapsedGroupSize: {
-    width: 200,
-    height: 60
-  }
-};
-}
-
-```
+<!-- -->
 
 Lastly, if none of the previous sources returns a value, the built-in default of `{ width: 200, height: 150 }` is used.
 
 Magnetizing when collapsed/expanded
 
-By default, the surface widget will run the [Magnetizer](/angular/docs/apps/magnetizer.md) whenever a group is collapsed or expanded: when a group is expanded, surrounding elements are adjusted so as to ensure the group does not intersect with any other element. When a group is collapsed, the rest of the elements in the view are gathered in towards the collapsed group. This behaviour can be switched off - see the `afterGroupChange` flag in the [Surface widget magnetizer options](/angular/docs/apps/magnetizer.md#surface-widget)
+By default, the surface widget will run the [Magnetizer](/undefined/docs/magnetizer) whenever a group is collapsed or expanded: when a group is expanded, surrounding elements are adjusted so as to ensure the group does not intersect with any other element. When a group is collapsed, the rest of the elements in the view are gathered in towards the collapsed group. This behaviour can be switched off - see the `afterGroupChange` flag in the [Surface widget magnetizer options](/undefined/docs/magnetizer#surface-widget)
 
 ***
 
@@ -306,33 +264,63 @@ Elastic groups allow your users to dynamically resize a group by dragging its ch
 {
     groups:{
         default:{
-            elastic:true,
-            minSize:{ width:250, height:250 }    // optional, but it does tend to help aesthetically to have a minSize.
+            elastic:true
         }
     }
 }
 
 ```
 
-Try dragging the node inside the group - you'll see the group displays a skeleton element showing how it would be resized to accommodate the node's new position. On mouseup the group is then resized:
+Try dragging a node inside the group - you'll see the group displays a skeleton element showing how it would be resized to accommodate the node's new position. On mouseup the group is then resized:
 
 **********
 
 ### Dragging elements out of an elastic group[​](#dragging-elements-out-of-an-elastic-group "Direct link to Dragging elements out of an elastic group")
 
-To drag a child node out of an elastic group, hold down the Shift key prior to the drag.
+To drag a child node out of an elastic group, hold down the `Shift` key prior to the drag.
 
 ### Suppressing resize[​](#suppressing-resize "Direct link to Suppressing resize")
 
-Ordinarily, dragging a child vertex of an elastic group will cause the group to resize to fit its content. Holding the `shift` key can also be used to switch off elastic resize while an element is being dragged.
+Ordinarily, dragging a child vertex of an elastic group will cause the group to resize to fit its content. Holding the `Shift` key can also be used to switch off elastic resize while an element is being dragged.
 
 ### Dragging the group and the node[​](#dragging-the-group-and-the-node "Direct link to Dragging the group and the node")
 
-If you hold down the Meta key (Command on macs), you can drag child nodes/groups within their parent, and when the node reaches the bounds of the parent, the parent will relocate along with the child. It's easier to show this than explain it - try it on the canvas above.
+If you hold down the `Meta` key (`Command` on macs), you can drag child nodes/groups within their parent, and when the node reaches the bounds of the parent, the parent will relocate along with the child. It's easier to show this than explain it - try it on the canvas above.
 
 ### Nested elastic groups[​](#nested-elastic-groups "Direct link to Nested elastic groups")
 
 Elastic groups which are themselves children of another elastic group will relay size changes during dragging to their parent, so that the user can see what changes will be made to all the groups.
+
+***
+
+## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
+
+You might want to show more detail when zoomed in and less detail when zoomed out. VisuallyJs exposes a signal called `zoom()` on `BaseVertexComponent` to assist you with this.
+
+```html
+@if (zoom() > 1.5) {
+  <div class="details">
+    <!-- Detailed information shown only when zoomed in -->
+    <p>{{ data.description }}</p>
+  </div>
+}
+
+```
+
+You can also use it within your component class for computed properties or effects:
+
+<!-- -->
+
+```typescript
+import { Component, computed } from '@angular/core';
+import { BaseGroupComponent } from '@visuallyjs/browser-ui-angular';
+
+@Component({ ... })
+export class MyCustomGroup extends BaseGroupComponent {
+isZoomedIn = computed(() => this.zoom() > 2);
+}
+
+```
 
 ***
 
@@ -374,37 +362,6 @@ Extension of group definition in a view that adds `component` and `inputs`.
 | minSize?              | [Size]()                                                         | Minimum size the group can be.                                                                                                                                                                                                                                                                                                                                                              |
 | padding?              | number                                                           | Optional padding to set inside a group when computing an auto size.                                                                                                                                                                                                                                                                                                                         |
 | parent?               | string \| Array\<string>                                         | Optional ID of one or more edge definitions to include in this definition. The child definition is merged on top of the parent definition(s). Circular references are not allowed and will throw an error.                                                                                                                                                                                  |
-
-***
-
-## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
-
-You might want to show more detail when zoomed in and less detail when zoomed out. VisuallyJs exposes a signal called `zoom()` on `BaseVertexComponent` to assist you with this.
-
-```html
-@if (zoom() > 1.5) {
-  <div class="details">
-    <!-- Detailed information shown only when zoomed in -->
-    <p>{{ data.description }}</p>
-  </div>
-}
-
-```
-
-You can also use it within your component class for computed properties or effects:
-
-<!-- -->
-
-```typescript
-import { Component, computed } from '@angular/core';
-import { BaseGroupComponent } from '@visuallyjs/browser-ui-angular';
-
-@Component({ ... })
-export class MyCustomGroup extends BaseGroupComponent {
-isZoomedIn = computed(() => this.zoom() > 2);
-}
-
-```
 
 ***
 

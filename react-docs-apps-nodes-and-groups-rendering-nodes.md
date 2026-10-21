@@ -147,6 +147,8 @@ These are the props that are passed to the `jsx` you provide to map a node, grou
 
 ## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
 
+## Rendering content based on zoom[​](#rendering-content-based-on-zoom "Direct link to Rendering content based on zoom")
+
 You might want to show more detail when zoomed in and less detail when zoomed out. VisuallyJs provides a `useZoom` hook to assist you with this.
 
 ```tsx
